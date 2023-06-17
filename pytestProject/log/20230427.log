@@ -1,0 +1,759 @@
+[2023-04-27 11:54:06,948][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 11:54:06,949][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-27 11:54:06,950][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}} 
+[2023-04-27 11:54:06,950][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-27 11:54:06,952][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [[True, 0, '成功']], 'test_get_room_list': [[1, 10, True, 0, '成功']], 'test_create_room': [['2023-04-27', '2023-05-22', '自动化测试Test', 658, 1, True, '成功']]} 
+[2023-04-27 11:54:07,013][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 11:54:44,683][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 11:54:44,686][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-27 11:54:44,686][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}} 
+[2023-04-27 11:54:44,686][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-27 11:54:44,688][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [[True, 0, '成功']], 'test_get_room_list': [[1, 10, True, 0, '成功']], 'test_create_room': [['2023-04-27', '2023-05-22', '自动化测试Test', 658, 1, True, 0, '成功']]} 
+[2023-04-27 11:54:44,706][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 11:54:44,714][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-27 11:54:44,714][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-27 11:54:44,714][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-27 11:54:44,714][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-27 11:54:44,714][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 11:54:44,714][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-27 11:54:44,714][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-27 11:54:44,714][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-27 11:54:44,807][conftest.py 27][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-27 11:54:44,809][test_03_room.py 29][INFO]: *************** 开始执行用例 ***************
+[2023-04-27 11:54:44,809][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/page
+[2023-04-27 11:54:44,809][rest_client.py 52][INFO]: 接口请求方式 ==>> GET
+[2023-04-27 11:54:44,810][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "a9d09413-ec15-4d56-b998-8da7cf851027"
+}
+[2023-04-27 11:54:44,810][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-04-27 11:54:44,810][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 11:54:44,810][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> null
+[2023-04-27 11:54:44,810][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> {'current': 1, 'size': 10}
+[2023-04-27 11:54:44,810][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-04-27 11:54:49,094][room.py 31][INFO]: 获取会议列表 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":{"records":[{"roomId":710,"roomName":"Test","sceneId":658,"userNum":1,"status":1,"beginTime":"2023-04-27","endTime":"2023-05-22","createTime":"2023-04-27 11:04:04","updateTime":"2023-04-27 11:04:04","createUser":5},{"roomId":709,"roomName":"Test2","sceneId":658,"userNum":3,"status":1,"beginTime":"2023-04-20","endTime":"2023-05-25","createTime":"2023-04-26 10:53:22","updateTime":"2023-04-26 10:53:22","createUser":5},{"roomId":708,"roomName":"Test1","sceneId":656,"userNum":99,"status":1,"beginTime":"2023-04-26","endTime":"2023-05-24","createTime":"2023-04-26 10:44:13","updateTime":"2023-04-26 10:44:13","createUser":5},{"roomId":707,"roomName":"Test","sceneId":656,"userNum":6,"status":1,"beginTime":"2023-04-12","endTime":"2023-05-09","createTime":"2023-04-26 10:41:45","updateTime":"2023-04-26 10:41:45","createUser":5},{"roomId":706,"roomName":"Test-office","sceneId":658,"userNum":999,"status":1,"beginTime":"2023-04-26","endTime":"2023-05-25","createTime":"2023-04-26 10:24:02","updateTime":"2023-04-26 10:24:02","createUser":5},{"roomId":705,"roomName":"office","sceneId":658,"userNum":6,"status":1,"beginTime":"2023-04-22","endTime":"2023-05-19","createTime":"2023-04-23 14:04:45","updateTime":"2023-04-23 14:04:45","createUser":5},{"roomId":702,"roomName":"Test11","sceneId":657,"userNum":9996,"status":1,"beginTime":"2023-04-21","endTime":"2023-05-19","createTime":"2023-04-18 10:46:48","updateTime":"2023-04-18 10:46:48","createUser":5},{"roomId":700,"roomName":"Test10","sceneId":656,"userNum":2,"status":1,"beginTime":"2023-04-14","endTime":"2023-05-19","createTime":"2023-04-17 11:53:55","updateTime":"2023-04-17 11:53:55","createUser":5},{"roomId":699,"roomName":"Test9","sceneId":657,"userNum":7,"status":1,"beginTime":"2023-04-21","endTime":"2023-05-10","createTime":"2023-04-14 17:09:43","updateTime":"2023-04-17 15:12:42","createUser":5},{"roomId":698,"roomName":"Test8","sceneId":657,"userNum":9999,"status":1,"beginTime":"2023-04-15","endTime":"2023-05-19","createTime":"2023-04-14 17:08:49","updateTime":"2023-04-17 13:43:34","createUser":5}],"total":20,"size":10,"current":1,"orders":[],"optimizeCountSql":true,"searchCount":true,"countId":null,"maxLimit":null,"pages":2}}
+[2023-04-27 11:54:49,094][test_03_room.py 34][INFO]: code ==>> 期望结果：0,实际结果：【0】
+[2023-04-27 11:54:49,094][test_03_room.py 37][INFO]: *************** 结束执行用例 ***************
+[2023-04-27 11:54:49,112][test_03_room.py 47][INFO]: *************** 开始执行用例 ***************
+[2023-04-27 11:56:20,729][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 11:56:20,731][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-27 11:56:20,731][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}} 
+[2023-04-27 11:56:20,731][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-27 11:56:20,733][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [[True, 0, '成功']], 'test_get_room_list': [[1, 10, True, 0, '成功']], 'test_create_room': [['2023-04-27', '2023-05-22', '自动化测试Test', 658, 1, True, 0, '成功']]} 
+[2023-04-27 11:56:20,757][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 11:56:20,764][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-27 11:56:20,764][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-27 11:56:20,764][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-27 11:56:20,764][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-27 11:56:20,764][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 11:56:20,764][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-27 11:56:20,764][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-27 11:56:20,764][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-27 11:56:20,862][conftest.py 27][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-27 11:56:20,863][test_03_room.py 29][INFO]: *************** 开始执行用例 ***************
+[2023-04-27 11:56:20,863][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/page
+[2023-04-27 11:56:20,863][rest_client.py 52][INFO]: 接口请求方式 ==>> GET
+[2023-04-27 11:56:20,863][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "a9d09413-ec15-4d56-b998-8da7cf851027"
+}
+[2023-04-27 11:56:20,863][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-04-27 11:56:20,863][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 11:56:20,863][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> null
+[2023-04-27 11:56:20,864][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> {'current': 1, 'size': 10}
+[2023-04-27 11:56:20,864][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-04-27 11:56:20,950][room.py 31][INFO]: 获取会议列表 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":{"records":[{"roomId":710,"roomName":"Test","sceneId":658,"userNum":1,"status":1,"beginTime":"2023-04-27","endTime":"2023-05-22","createTime":"2023-04-27 11:04:04","updateTime":"2023-04-27 11:04:04","createUser":5},{"roomId":709,"roomName":"Test2","sceneId":658,"userNum":3,"status":1,"beginTime":"2023-04-20","endTime":"2023-05-25","createTime":"2023-04-26 10:53:22","updateTime":"2023-04-26 10:53:22","createUser":5},{"roomId":708,"roomName":"Test1","sceneId":656,"userNum":99,"status":1,"beginTime":"2023-04-26","endTime":"2023-05-24","createTime":"2023-04-26 10:44:13","updateTime":"2023-04-26 10:44:13","createUser":5},{"roomId":707,"roomName":"Test","sceneId":656,"userNum":6,"status":1,"beginTime":"2023-04-12","endTime":"2023-05-09","createTime":"2023-04-26 10:41:45","updateTime":"2023-04-26 10:41:45","createUser":5},{"roomId":706,"roomName":"Test-office","sceneId":658,"userNum":999,"status":1,"beginTime":"2023-04-26","endTime":"2023-05-25","createTime":"2023-04-26 10:24:02","updateTime":"2023-04-26 10:24:02","createUser":5},{"roomId":705,"roomName":"office","sceneId":658,"userNum":6,"status":1,"beginTime":"2023-04-22","endTime":"2023-05-19","createTime":"2023-04-23 14:04:45","updateTime":"2023-04-23 14:04:45","createUser":5},{"roomId":702,"roomName":"Test11","sceneId":657,"userNum":9996,"status":1,"beginTime":"2023-04-21","endTime":"2023-05-19","createTime":"2023-04-18 10:46:48","updateTime":"2023-04-18 10:46:48","createUser":5},{"roomId":700,"roomName":"Test10","sceneId":656,"userNum":2,"status":1,"beginTime":"2023-04-14","endTime":"2023-05-19","createTime":"2023-04-17 11:53:55","updateTime":"2023-04-17 11:53:55","createUser":5},{"roomId":699,"roomName":"Test9","sceneId":657,"userNum":7,"status":1,"beginTime":"2023-04-21","endTime":"2023-05-10","createTime":"2023-04-14 17:09:43","updateTime":"2023-04-17 15:12:42","createUser":5},{"roomId":698,"roomName":"Test8","sceneId":657,"userNum":9999,"status":1,"beginTime":"2023-04-15","endTime":"2023-05-19","createTime":"2023-04-14 17:08:49","updateTime":"2023-04-17 13:43:34","createUser":5}],"total":20,"size":10,"current":1,"orders":[],"optimizeCountSql":true,"searchCount":true,"countId":null,"maxLimit":null,"pages":2}}
+[2023-04-27 11:56:20,950][test_03_room.py 34][INFO]: code ==>> 期望结果：0,实际结果：【0】
+[2023-04-27 11:56:20,951][test_03_room.py 37][INFO]: *************** 结束执行用例 ***************
+[2023-04-27 11:56:20,960][test_03_room.py 47][INFO]: *************** 开始执行用例 ***************
+[2023-04-27 11:56:20,960][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/save
+[2023-04-27 11:56:20,960][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-27 11:56:20,960][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "a9d09413-ec15-4d56-b998-8da7cf851027"
+}
+[2023-04-27 11:56:20,960][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-27 11:56:20,960][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 11:56:20,960][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "beginTime": "2023-04-27",
+    "endTime": "2023-05-22",
+    "roomName": "自动化测试Test",
+    "sceneId": 658,
+    "userNum": 1
+}
+[2023-04-27 11:56:20,960][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-27 11:56:20,960][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-27 11:56:21,047][room.py 65][INFO]: 创建会议 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":null}
+[2023-04-27 11:56:21,047][test_03_room.py 15][INFO]: 步骤1 ==>> 创建会议
+[2023-04-27 11:56:54,163][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 11:56:54,165][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-27 11:56:54,165][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}} 
+[2023-04-27 11:56:54,165][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-27 11:56:54,167][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [[True, 0, '成功']], 'test_get_room_list': [[1, 10, True, 0, '成功']], 'test_create_room': [['2023-04-27', '2023-05-22', '自动化测试Test', 658, 1, True, 0, '成功']]} 
+[2023-04-27 11:56:54,191][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 11:56:54,197][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-27 11:56:54,197][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-27 11:56:54,197][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-27 11:56:54,197][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-27 11:56:54,197][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 11:56:54,198][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-27 11:56:54,198][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-27 11:56:54,198][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-27 11:56:54,215][conftest.py 27][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-27 11:56:54,216][test_03_room.py 29][INFO]: *************** 开始执行用例 ***************
+[2023-04-27 11:56:54,216][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/page
+[2023-04-27 11:56:54,216][rest_client.py 52][INFO]: 接口请求方式 ==>> GET
+[2023-04-27 11:56:54,217][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "a9d09413-ec15-4d56-b998-8da7cf851027"
+}
+[2023-04-27 11:56:54,217][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-04-27 11:56:54,217][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 11:56:54,217][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> null
+[2023-04-27 11:56:54,217][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> {'current': 1, 'size': 10}
+[2023-04-27 11:56:54,217][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-04-27 11:56:54,241][room.py 31][INFO]: 获取会议列表 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":{"records":[{"roomId":711,"roomName":"自动化测试Test","sceneId":658,"userNum":1,"status":1,"beginTime":"2023-04-27","endTime":"2023-05-22","createTime":"2023-04-27 11:56:17","updateTime":"2023-04-27 11:56:17","createUser":5},{"roomId":710,"roomName":"Test","sceneId":658,"userNum":1,"status":1,"beginTime":"2023-04-27","endTime":"2023-05-22","createTime":"2023-04-27 11:04:04","updateTime":"2023-04-27 11:04:04","createUser":5},{"roomId":709,"roomName":"Test2","sceneId":658,"userNum":3,"status":1,"beginTime":"2023-04-20","endTime":"2023-05-25","createTime":"2023-04-26 10:53:22","updateTime":"2023-04-26 10:53:22","createUser":5},{"roomId":708,"roomName":"Test1","sceneId":656,"userNum":99,"status":1,"beginTime":"2023-04-26","endTime":"2023-05-24","createTime":"2023-04-26 10:44:13","updateTime":"2023-04-26 10:44:13","createUser":5},{"roomId":707,"roomName":"Test","sceneId":656,"userNum":6,"status":1,"beginTime":"2023-04-12","endTime":"2023-05-09","createTime":"2023-04-26 10:41:45","updateTime":"2023-04-26 10:41:45","createUser":5},{"roomId":706,"roomName":"Test-office","sceneId":658,"userNum":999,"status":1,"beginTime":"2023-04-26","endTime":"2023-05-25","createTime":"2023-04-26 10:24:02","updateTime":"2023-04-26 10:24:02","createUser":5},{"roomId":705,"roomName":"office","sceneId":658,"userNum":6,"status":1,"beginTime":"2023-04-22","endTime":"2023-05-19","createTime":"2023-04-23 14:04:45","updateTime":"2023-04-23 14:04:45","createUser":5},{"roomId":702,"roomName":"Test11","sceneId":657,"userNum":9996,"status":1,"beginTime":"2023-04-21","endTime":"2023-05-19","createTime":"2023-04-18 10:46:48","updateTime":"2023-04-18 10:46:48","createUser":5},{"roomId":700,"roomName":"Test10","sceneId":656,"userNum":2,"status":1,"beginTime":"2023-04-14","endTime":"2023-05-19","createTime":"2023-04-17 11:53:55","updateTime":"2023-04-17 11:53:55","createUser":5},{"roomId":699,"roomName":"Test9","sceneId":657,"userNum":7,"status":1,"beginTime":"2023-04-21","endTime":"2023-05-10","createTime":"2023-04-14 17:09:43","updateTime":"2023-04-17 15:12:42","createUser":5}],"total":21,"size":10,"current":1,"orders":[],"optimizeCountSql":true,"searchCount":true,"countId":null,"maxLimit":null,"pages":3}}
+[2023-04-27 11:56:54,241][test_03_room.py 34][INFO]: code ==>> 期望结果：0,实际结果：【0】
+[2023-04-27 11:56:54,241][test_03_room.py 37][INFO]: *************** 结束执行用例 ***************
+[2023-04-27 11:56:54,249][test_03_room.py 47][INFO]: *************** 开始执行用例 ***************
+[2023-04-27 11:56:54,249][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/save
+[2023-04-27 11:56:54,249][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-27 11:56:54,249][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "a9d09413-ec15-4d56-b998-8da7cf851027"
+}
+[2023-04-27 11:56:54,249][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-27 11:56:54,249][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 11:56:54,249][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "beginTime": "2023-04-27",
+    "endTime": "2023-05-22",
+    "roomName": "自动化测试Test",
+    "sceneId": 658,
+    "userNum": 1
+}
+[2023-04-27 11:56:54,249][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-27 11:56:54,249][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-27 11:56:54,263][room.py 65][INFO]: 创建会议 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":null}
+[2023-04-27 11:56:54,263][test_03_room.py 15][INFO]: 步骤1 ==>> 创建会议
+[2023-04-27 11:56:54,263][test_03_room.py 53][INFO]: code ==>> 期望结果：0,实际结果：【0】
+[2023-04-27 11:56:54,263][test_03_room.py 56][INFO]: *************** 结束执行用例 ***************
+[2023-04-27 15:05:51,842][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:06:10,457][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:07:18,522][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:07:18,534][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:11:24,814][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:11:24,827][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:12:39,167][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:12:39,178][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:18:10,743][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:18:10,758][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:20:02,459][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:20:02,473][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:20:17,604][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:20:17,616][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:20:27,124][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:20:27,138][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:20:35,018][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:20:35,030][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:24:27,032][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:24:27,045][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:28:39,366][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:28:39,379][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:28:39,383][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-27 15:28:39,384][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}, 'init_sql': {'delete_create_room': "set sql_safe_updates =0;DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'"}} 
+[2023-04-27 15:28:39,384][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-27 15:28:39,386][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [[True, 0, '成功']], 'test_get_room_list': [[1, 10, True, 0, '成功']], 'test_create_room': [['2023-04-27', '2023-05-22', '自动化测试Test', 658, 1, True, 0, '成功']]} 
+[2023-04-27 15:28:39,406][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:28:39,413][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-27 15:28:39,413][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-27 15:28:39,413][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-27 15:28:39,413][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-27 15:28:39,413][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 15:28:39,413][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-27 15:28:39,413][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-27 15:28:39,413][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-27 15:28:39,453][conftest.py 39][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-27 15:28:39,454][test_03_room.py 29][INFO]: *************** 开始执行用例 ***************
+[2023-04-27 15:28:39,455][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/page
+[2023-04-27 15:28:39,455][rest_client.py 52][INFO]: 接口请求方式 ==>> GET
+[2023-04-27 15:28:39,455][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "a9d09413-ec15-4d56-b998-8da7cf851027"
+}
+[2023-04-27 15:28:39,455][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-04-27 15:28:39,455][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 15:28:39,455][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> null
+[2023-04-27 15:28:39,455][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> {'current': 1, 'size': 10}
+[2023-04-27 15:28:39,455][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-04-27 15:28:39,471][room.py 31][INFO]: 获取会议列表 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":{"records":[{"roomId":710,"roomName":"Test","sceneId":658,"userNum":1,"status":1,"beginTime":"2023-04-27","endTime":"2023-05-22","createTime":"2023-04-27 11:04:04","updateTime":"2023-04-27 11:04:04","createUser":5},{"roomId":709,"roomName":"Test2","sceneId":658,"userNum":3,"status":1,"beginTime":"2023-04-20","endTime":"2023-05-25","createTime":"2023-04-26 10:53:22","updateTime":"2023-04-26 10:53:22","createUser":5},{"roomId":708,"roomName":"Test1","sceneId":656,"userNum":99,"status":1,"beginTime":"2023-04-26","endTime":"2023-05-24","createTime":"2023-04-26 10:44:13","updateTime":"2023-04-26 10:44:13","createUser":5},{"roomId":707,"roomName":"Test","sceneId":656,"userNum":6,"status":1,"beginTime":"2023-04-12","endTime":"2023-05-09","createTime":"2023-04-26 10:41:45","updateTime":"2023-04-26 10:41:45","createUser":5},{"roomId":706,"roomName":"Test-office","sceneId":658,"userNum":999,"status":1,"beginTime":"2023-04-26","endTime":"2023-05-25","createTime":"2023-04-26 10:24:02","updateTime":"2023-04-26 10:24:02","createUser":5},{"roomId":705,"roomName":"office","sceneId":658,"userNum":6,"status":1,"beginTime":"2023-04-22","endTime":"2023-05-19","createTime":"2023-04-23 14:04:45","updateTime":"2023-04-23 14:04:45","createUser":5},{"roomId":702,"roomName":"Test11","sceneId":657,"userNum":9996,"status":1,"beginTime":"2023-04-21","endTime":"2023-05-19","createTime":"2023-04-18 10:46:48","updateTime":"2023-04-18 10:46:48","createUser":5},{"roomId":700,"roomName":"Test10","sceneId":656,"userNum":2,"status":1,"beginTime":"2023-04-14","endTime":"2023-05-19","createTime":"2023-04-17 11:53:55","updateTime":"2023-04-17 11:53:55","createUser":5},{"roomId":699,"roomName":"Test9","sceneId":657,"userNum":7,"status":1,"beginTime":"2023-04-21","endTime":"2023-05-10","createTime":"2023-04-14 17:09:43","updateTime":"2023-04-17 15:12:42","createUser":5},{"roomId":698,"roomName":"Test8","sceneId":657,"userNum":9999,"status":1,"beginTime":"2023-04-15","endTime":"2023-05-19","createTime":"2023-04-14 17:08:49","updateTime":"2023-04-17 13:43:34","createUser":5}],"total":20,"size":10,"current":1,"orders":[],"optimizeCountSql":true,"searchCount":true,"countId":null,"maxLimit":null,"pages":2}}
+[2023-04-27 15:28:39,472][test_03_room.py 34][INFO]: code ==>> 期望结果：0,实际结果：【0】
+[2023-04-27 15:28:39,472][test_03_room.py 37][INFO]: *************** 结束执行用例 ***************
+[2023-04-27 15:28:39,482][test_03_room.py 47][INFO]: *************** 开始执行用例 ***************
+[2023-04-27 15:28:39,482][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/save
+[2023-04-27 15:28:39,482][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-27 15:28:39,483][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "a9d09413-ec15-4d56-b998-8da7cf851027"
+}
+[2023-04-27 15:28:39,483][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-27 15:28:39,483][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 15:28:39,483][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "beginTime": "2023-04-27",
+    "endTime": "2023-05-22",
+    "roomName": "自动化测试Test",
+    "sceneId": 658,
+    "userNum": 1
+}
+[2023-04-27 15:28:39,483][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-27 15:28:39,483][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-27 15:28:39,497][room.py 65][INFO]: 创建会议 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":null}
+[2023-04-27 15:28:39,497][test_03_room.py 15][INFO]: 步骤1 ==>> 创建会议
+[2023-04-27 15:28:39,497][test_03_room.py 53][INFO]: code ==>> 期望结果：0,实际结果：【0】
+[2023-04-27 15:28:39,497][test_03_room.py 56][INFO]: *************** 结束执行用例 ***************
+[2023-04-27 15:32:08,455][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:32:08,469][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:32:08,492][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-27 15:32:08,493][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}, 'init_sql': {'delete_create_room': "set sql_safe_updates =0;DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'"}} 
+[2023-04-27 15:32:08,493][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-27 15:32:08,495][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [[True, 0, '成功']], 'test_get_room_list': [[1, 10, True, 0, '成功']], 'test_create_room': [['2023-04-27', '2023-05-22', '自动化测试Test', 658, 1, True, 0, '成功']]} 
+[2023-04-27 15:32:08,519][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:32:08,526][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-27 15:32:08,526][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-27 15:32:08,526][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-27 15:32:08,526][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-27 15:32:08,526][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 15:32:08,526][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-27 15:32:08,526][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-27 15:32:08,526][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-27 15:32:08,541][conftest.py 39][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-27 15:32:08,543][test_03_room.py 29][INFO]: *************** 开始执行用例 ***************
+[2023-04-27 15:32:08,543][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/page
+[2023-04-27 15:32:08,543][rest_client.py 52][INFO]: 接口请求方式 ==>> GET
+[2023-04-27 15:32:08,543][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "a9d09413-ec15-4d56-b998-8da7cf851027"
+}
+[2023-04-27 15:32:08,543][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-04-27 15:32:08,543][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 15:32:08,544][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> null
+[2023-04-27 15:32:08,544][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> {'current': 1, 'size': 10}
+[2023-04-27 15:32:08,544][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-04-27 15:32:08,559][room.py 31][INFO]: 获取会议列表 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":{"records":[{"roomId":713,"roomName":"自动化测试Test","sceneId":658,"userNum":1,"status":1,"beginTime":"2023-04-27","endTime":"2023-05-22","createTime":"2023-04-27 15:28:35","updateTime":"2023-04-27 15:28:35","createUser":5},{"roomId":710,"roomName":"Test","sceneId":658,"userNum":1,"status":1,"beginTime":"2023-04-27","endTime":"2023-05-22","createTime":"2023-04-27 11:04:04","updateTime":"2023-04-27 11:04:04","createUser":5},{"roomId":709,"roomName":"Test2","sceneId":658,"userNum":3,"status":1,"beginTime":"2023-04-20","endTime":"2023-05-25","createTime":"2023-04-26 10:53:22","updateTime":"2023-04-26 10:53:22","createUser":5},{"roomId":708,"roomName":"Test1","sceneId":656,"userNum":99,"status":1,"beginTime":"2023-04-26","endTime":"2023-05-24","createTime":"2023-04-26 10:44:13","updateTime":"2023-04-26 10:44:13","createUser":5},{"roomId":707,"roomName":"Test","sceneId":656,"userNum":6,"status":1,"beginTime":"2023-04-12","endTime":"2023-05-09","createTime":"2023-04-26 10:41:45","updateTime":"2023-04-26 10:41:45","createUser":5},{"roomId":706,"roomName":"Test-office","sceneId":658,"userNum":999,"status":1,"beginTime":"2023-04-26","endTime":"2023-05-25","createTime":"2023-04-26 10:24:02","updateTime":"2023-04-26 10:24:02","createUser":5},{"roomId":705,"roomName":"office","sceneId":658,"userNum":6,"status":1,"beginTime":"2023-04-22","endTime":"2023-05-19","createTime":"2023-04-23 14:04:45","updateTime":"2023-04-23 14:04:45","createUser":5},{"roomId":702,"roomName":"Test11","sceneId":657,"userNum":9996,"status":1,"beginTime":"2023-04-21","endTime":"2023-05-19","createTime":"2023-04-18 10:46:48","updateTime":"2023-04-18 10:46:48","createUser":5},{"roomId":700,"roomName":"Test10","sceneId":656,"userNum":2,"status":1,"beginTime":"2023-04-14","endTime":"2023-05-19","createTime":"2023-04-17 11:53:55","updateTime":"2023-04-17 11:53:55","createUser":5},{"roomId":699,"roomName":"Test9","sceneId":657,"userNum":7,"status":1,"beginTime":"2023-04-21","endTime":"2023-05-10","createTime":"2023-04-14 17:09:43","updateTime":"2023-04-17 15:12:42","createUser":5}],"total":21,"size":10,"current":1,"orders":[],"optimizeCountSql":true,"searchCount":true,"countId":null,"maxLimit":null,"pages":3}}
+[2023-04-27 15:32:08,559][test_03_room.py 34][INFO]: code ==>> 期望结果：0,实际结果：【0】
+[2023-04-27 15:32:08,561][test_03_room.py 37][INFO]: *************** 结束执行用例 ***************
+[2023-04-27 15:32:08,572][mysql_operate.py 53][INFO]: 操作MySQL出现错误，错误原因：(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'' at line 1")
+[2023-04-27 15:32:08,574][conftest.py 28][INFO]: ******************************
+[2023-04-27 15:32:08,574][conftest.py 29][INFO]: 前置步骤开始 ==>> 清理数据
+[2023-04-27 15:32:08,574][conftest.py 65][INFO]: 创建房间操作：删除已有房间--准备创建新房间
+[2023-04-27 15:32:08,574][conftest.py 66][INFO]: 执行前置SQL:set sql_safe_updates =0;DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'
+[2023-04-27 15:32:08,575][test_03_room.py 48][INFO]: *************** 开始执行用例 ***************
+[2023-04-27 15:32:08,576][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/save
+[2023-04-27 15:32:08,576][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-27 15:32:08,576][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "a9d09413-ec15-4d56-b998-8da7cf851027"
+}
+[2023-04-27 15:32:08,576][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-27 15:32:08,576][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 15:32:08,576][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "beginTime": "2023-04-27",
+    "endTime": "2023-05-22",
+    "roomName": "自动化测试Test",
+    "sceneId": 658,
+    "userNum": 1
+}
+[2023-04-27 15:32:08,576][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-27 15:32:08,576][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-27 15:32:08,591][room.py 65][INFO]: 创建会议 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":null}
+[2023-04-27 15:32:08,591][test_03_room.py 15][INFO]: 步骤1 ==>> 创建会议
+[2023-04-27 15:32:08,591][test_03_room.py 54][INFO]: code ==>> 期望结果：0,实际结果：【0】
+[2023-04-27 15:32:08,592][test_03_room.py 57][INFO]: *************** 结束执行用例 ***************
+[2023-04-27 15:32:08,605][mysql_operate.py 53][INFO]: 操作MySQL出现错误，错误原因：(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'' at line 1")
+[2023-04-27 15:32:08,606][conftest.py 34][INFO]: 后置步骤开始 ==>> 清理数据
+[2023-04-27 15:32:08,606][conftest.py 70][INFO]: 创建房间操作：删除已创建的房间
+[2023-04-27 15:32:08,606][conftest.py 71][INFO]: 执行后置SQL:set sql_safe_updates =0;DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'
+[2023-04-27 15:33:13,567][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:33:13,580][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:33:13,584][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-27 15:33:13,585][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}, 'init_sql': {'delete_create_room': "set sql_safe_updates =0;DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'"}} 
+[2023-04-27 15:33:13,585][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-27 15:33:13,587][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [[True, 0, '成功']], 'test_get_room_list': [[1, 10, True, 0, '成功']], 'test_create_room': [['2023-04-27', '2023-05-22', '自动化测试Test', 658, 1, True, 0, '成功']]} 
+[2023-04-27 15:33:13,606][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:33:13,613][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-27 15:33:13,613][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-27 15:33:13,613][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-27 15:33:13,613][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-27 15:33:13,613][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 15:33:13,613][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-27 15:33:13,613][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-27 15:33:13,614][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-27 15:33:13,633][conftest.py 39][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-27 15:33:13,635][test_03_room.py 29][INFO]: *************** 开始执行用例 ***************
+[2023-04-27 15:33:13,635][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/page
+[2023-04-27 15:33:13,635][rest_client.py 52][INFO]: 接口请求方式 ==>> GET
+[2023-04-27 15:33:13,635][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "a9d09413-ec15-4d56-b998-8da7cf851027"
+}
+[2023-04-27 15:33:13,635][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-04-27 15:33:13,635][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 15:33:13,635][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> null
+[2023-04-27 15:33:13,635][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> {'current': 1, 'size': 10}
+[2023-04-27 15:33:13,635][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-04-27 15:33:13,657][room.py 31][INFO]: 获取会议列表 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":{"records":[{"roomId":714,"roomName":"自动化测试Test","sceneId":658,"userNum":1,"status":1,"beginTime":"2023-04-27","endTime":"2023-05-22","createTime":"2023-04-27 15:32:04","updateTime":"2023-04-27 15:32:04","createUser":5},{"roomId":713,"roomName":"自动化测试Test","sceneId":658,"userNum":1,"status":1,"beginTime":"2023-04-27","endTime":"2023-05-22","createTime":"2023-04-27 15:28:35","updateTime":"2023-04-27 15:28:35","createUser":5},{"roomId":710,"roomName":"Test","sceneId":658,"userNum":1,"status":1,"beginTime":"2023-04-27","endTime":"2023-05-22","createTime":"2023-04-27 11:04:04","updateTime":"2023-04-27 11:04:04","createUser":5},{"roomId":709,"roomName":"Test2","sceneId":658,"userNum":3,"status":1,"beginTime":"2023-04-20","endTime":"2023-05-25","createTime":"2023-04-26 10:53:22","updateTime":"2023-04-26 10:53:22","createUser":5},{"roomId":708,"roomName":"Test1","sceneId":656,"userNum":99,"status":1,"beginTime":"2023-04-26","endTime":"2023-05-24","createTime":"2023-04-26 10:44:13","updateTime":"2023-04-26 10:44:13","createUser":5},{"roomId":707,"roomName":"Test","sceneId":656,"userNum":6,"status":1,"beginTime":"2023-04-12","endTime":"2023-05-09","createTime":"2023-04-26 10:41:45","updateTime":"2023-04-26 10:41:45","createUser":5},{"roomId":706,"roomName":"Test-office","sceneId":658,"userNum":999,"status":1,"beginTime":"2023-04-26","endTime":"2023-05-25","createTime":"2023-04-26 10:24:02","updateTime":"2023-04-26 10:24:02","createUser":5},{"roomId":705,"roomName":"office","sceneId":658,"userNum":6,"status":1,"beginTime":"2023-04-22","endTime":"2023-05-19","createTime":"2023-04-23 14:04:45","updateTime":"2023-04-23 14:04:45","createUser":5},{"roomId":702,"roomName":"Test11","sceneId":657,"userNum":9996,"status":1,"beginTime":"2023-04-21","endTime":"2023-05-19","createTime":"2023-04-18 10:46:48","updateTime":"2023-04-18 10:46:48","createUser":5},{"roomId":700,"roomName":"Test10","sceneId":656,"userNum":2,"status":1,"beginTime":"2023-04-14","endTime":"2023-05-19","createTime":"2023-04-17 11:53:55","updateTime":"2023-04-17 11:53:55","createUser":5}],"total":22,"size":10,"current":1,"orders":[],"optimizeCountSql":true,"searchCount":true,"countId":null,"maxLimit":null,"pages":3}}
+[2023-04-27 15:33:13,657][test_03_room.py 34][INFO]: code ==>> 期望结果：0,实际结果：【0】
+[2023-04-27 15:33:13,657][test_03_room.py 37][INFO]: *************** 结束执行用例 ***************
+[2023-04-27 15:33:13,669][mysql_operate.py 53][INFO]: 操作MySQL出现错误，错误原因：(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'' at line 1")
+[2023-04-27 15:33:13,670][conftest.py 28][INFO]: ******************************
+[2023-04-27 15:33:13,670][conftest.py 29][INFO]: 前置步骤开始 ==>> 清理数据
+[2023-04-27 15:33:13,671][conftest.py 65][INFO]: 创建房间操作：删除已有房间--准备创建新房间
+[2023-04-27 15:33:13,671][conftest.py 66][INFO]: 执行前置SQL:set sql_safe_updates =0;DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'
+[2023-04-27 15:33:13,672][test_03_room.py 48][INFO]: *************** 开始执行用例 ***************
+[2023-04-27 15:33:13,672][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/save
+[2023-04-27 15:33:13,672][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-27 15:33:13,672][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "a9d09413-ec15-4d56-b998-8da7cf851027"
+}
+[2023-04-27 15:33:13,672][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-27 15:33:13,673][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 15:33:13,673][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "beginTime": "2023-04-27",
+    "endTime": "2023-05-22",
+    "roomName": "自动化测试Test",
+    "sceneId": 658,
+    "userNum": 1
+}
+[2023-04-27 15:33:13,673][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-27 15:33:13,673][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-27 15:33:13,686][room.py 65][INFO]: 创建会议 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":null}
+[2023-04-27 15:33:13,686][test_03_room.py 15][INFO]: 步骤1 ==>> 创建会议
+[2023-04-27 15:33:13,686][test_03_room.py 54][INFO]: code ==>> 期望结果：0,实际结果：【0】
+[2023-04-27 15:33:13,686][test_03_room.py 57][INFO]: *************** 结束执行用例 ***************
+[2023-04-27 15:33:13,693][mysql_operate.py 53][INFO]: 操作MySQL出现错误，错误原因：(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'' at line 1")
+[2023-04-27 15:33:13,694][conftest.py 34][INFO]: 后置步骤开始 ==>> 清理数据
+[2023-04-27 15:33:13,694][conftest.py 70][INFO]: 创建房间操作：删除已创建的房间
+[2023-04-27 15:33:13,694][conftest.py 71][INFO]: 执行后置SQL:set sql_safe_updates =0;DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'
+[2023-04-27 15:36:31,724][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:36:31,737][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:36:31,751][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-27 15:36:31,752][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}, 'init_sql': {'delete_create_room': "DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'"}} 
+[2023-04-27 15:36:31,752][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-27 15:36:31,754][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [[True, 0, '成功']], 'test_get_room_list': [[1, 10, True, 0, '成功']], 'test_create_room': [['2023-04-27', '2023-05-22', '自动化测试Test', 658, 1, True, 0, '成功']]} 
+[2023-04-27 15:36:31,774][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:36:31,781][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-27 15:36:31,782][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-27 15:36:31,782][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-27 15:36:31,782][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-27 15:36:31,782][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 15:36:31,782][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-27 15:36:31,782][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-27 15:36:31,782][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-27 15:36:31,805][conftest.py 39][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-27 15:36:31,806][test_03_room.py 29][INFO]: *************** 开始执行用例 ***************
+[2023-04-27 15:36:31,806][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/page
+[2023-04-27 15:36:31,807][rest_client.py 52][INFO]: 接口请求方式 ==>> GET
+[2023-04-27 15:36:31,807][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "a9d09413-ec15-4d56-b998-8da7cf851027"
+}
+[2023-04-27 15:36:31,807][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-04-27 15:36:31,807][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 15:36:31,807][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> null
+[2023-04-27 15:36:31,807][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> {'current': 1, 'size': 10}
+[2023-04-27 15:36:31,807][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-04-27 15:36:31,830][room.py 31][INFO]: 获取会议列表 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":{"records":[{"roomId":715,"roomName":"自动化测试Test","sceneId":658,"userNum":1,"status":1,"beginTime":"2023-04-27","endTime":"2023-05-22","createTime":"2023-04-27 15:33:09","updateTime":"2023-04-27 15:33:09","createUser":5},{"roomId":714,"roomName":"自动化测试Test","sceneId":658,"userNum":1,"status":1,"beginTime":"2023-04-27","endTime":"2023-05-22","createTime":"2023-04-27 15:32:04","updateTime":"2023-04-27 15:32:04","createUser":5},{"roomId":713,"roomName":"自动化测试Test","sceneId":658,"userNum":1,"status":1,"beginTime":"2023-04-27","endTime":"2023-05-22","createTime":"2023-04-27 15:28:35","updateTime":"2023-04-27 15:28:35","createUser":5},{"roomId":710,"roomName":"Test","sceneId":658,"userNum":1,"status":1,"beginTime":"2023-04-27","endTime":"2023-05-22","createTime":"2023-04-27 11:04:04","updateTime":"2023-04-27 11:04:04","createUser":5},{"roomId":709,"roomName":"Test2","sceneId":658,"userNum":3,"status":1,"beginTime":"2023-04-20","endTime":"2023-05-25","createTime":"2023-04-26 10:53:22","updateTime":"2023-04-26 10:53:22","createUser":5},{"roomId":708,"roomName":"Test1","sceneId":656,"userNum":99,"status":1,"beginTime":"2023-04-26","endTime":"2023-05-24","createTime":"2023-04-26 10:44:13","updateTime":"2023-04-26 10:44:13","createUser":5},{"roomId":707,"roomName":"Test","sceneId":656,"userNum":6,"status":1,"beginTime":"2023-04-12","endTime":"2023-05-09","createTime":"2023-04-26 10:41:45","updateTime":"2023-04-26 10:41:45","createUser":5},{"roomId":706,"roomName":"Test-office","sceneId":658,"userNum":999,"status":1,"beginTime":"2023-04-26","endTime":"2023-05-25","createTime":"2023-04-26 10:24:02","updateTime":"2023-04-26 10:24:02","createUser":5},{"roomId":705,"roomName":"office","sceneId":658,"userNum":6,"status":1,"beginTime":"2023-04-22","endTime":"2023-05-19","createTime":"2023-04-23 14:04:45","updateTime":"2023-04-23 14:04:45","createUser":5},{"roomId":702,"roomName":"Test11","sceneId":657,"userNum":9996,"status":1,"beginTime":"2023-04-21","endTime":"2023-05-19","createTime":"2023-04-18 10:46:48","updateTime":"2023-04-18 10:46:48","createUser":5}],"total":23,"size":10,"current":1,"orders":[],"optimizeCountSql":true,"searchCount":true,"countId":null,"maxLimit":null,"pages":3}}
+[2023-04-27 15:36:31,830][test_03_room.py 34][INFO]: code ==>> 期望结果：0,实际结果：【0】
+[2023-04-27 15:36:31,830][test_03_room.py 37][INFO]: *************** 结束执行用例 ***************
+[2023-04-27 15:36:31,844][conftest.py 28][INFO]: ******************************
+[2023-04-27 15:36:31,844][conftest.py 29][INFO]: 前置步骤开始 ==>> 清理数据
+[2023-04-27 15:36:31,844][conftest.py 65][INFO]: 创建房间操作：删除已有房间--准备创建新房间
+[2023-04-27 15:36:31,844][conftest.py 66][INFO]: 执行前置SQL:DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'
+[2023-04-27 15:36:31,845][test_03_room.py 48][INFO]: *************** 开始执行用例 ***************
+[2023-04-27 15:36:31,845][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/save
+[2023-04-27 15:36:31,845][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-27 15:36:31,845][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "a9d09413-ec15-4d56-b998-8da7cf851027"
+}
+[2023-04-27 15:36:31,845][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-27 15:36:31,846][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 15:36:31,846][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "beginTime": "2023-04-27",
+    "endTime": "2023-05-22",
+    "roomName": "自动化测试Test",
+    "sceneId": 658,
+    "userNum": 1
+}
+[2023-04-27 15:36:31,846][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-27 15:36:31,846][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-27 15:36:31,863][room.py 65][INFO]: 创建会议 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":null}
+[2023-04-27 15:36:31,864][test_03_room.py 15][INFO]: 步骤1 ==>> 创建会议
+[2023-04-27 15:36:31,864][test_03_room.py 54][INFO]: code ==>> 期望结果：0,实际结果：【0】
+[2023-04-27 15:36:31,864][test_03_room.py 57][INFO]: *************** 结束执行用例 ***************
+[2023-04-27 15:36:31,873][conftest.py 34][INFO]: 后置步骤开始 ==>> 清理数据
+[2023-04-27 15:36:31,874][conftest.py 70][INFO]: 创建房间操作：删除已创建的房间
+[2023-04-27 15:36:31,874][conftest.py 71][INFO]: 执行后置SQL:DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'
+[2023-04-27 15:47:43,510][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:47:43,521][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:47:43,526][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-27 15:47:43,527][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}, 'init_sql': {'delete_create_room': "DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'"}} 
+[2023-04-27 15:47:43,527][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-27 15:47:43,529][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [[True, 0, '成功']], 'test_get_room_list': [[1, 10, True, 0, '成功']], 'test_create_room': [['2023-04-27', '2023-05-22', '自动化测试Test', 658, 1, True, 0, '成功']]} 
+[2023-04-27 15:47:43,553][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:47:43,558][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-27 15:47:43,558][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-27 15:47:43,560][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-27 15:47:43,560][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-27 15:47:43,560][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 15:47:43,560][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-27 15:47:43,560][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-27 15:47:43,560][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-27 15:47:43,583][conftest.py 39][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-27 15:47:43,584][test_03_room.py 29][INFO]: *************** 开始执行用例 ***************
+[2023-04-27 15:47:43,584][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/page
+[2023-04-27 15:47:43,584][rest_client.py 52][INFO]: 接口请求方式 ==>> GET
+[2023-04-27 15:47:43,584][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "a9d09413-ec15-4d56-b998-8da7cf851027"
+}
+[2023-04-27 15:47:43,584][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-04-27 15:47:43,584][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 15:47:43,584][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> null
+[2023-04-27 15:47:43,584][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> {'current': 1, 'size': 10}
+[2023-04-27 15:47:43,585][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-04-27 15:47:43,607][room.py 31][INFO]: 获取会议列表 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":{"records":[{"roomId":710,"roomName":"Test","sceneId":658,"userNum":1,"status":1,"beginTime":"2023-04-27","endTime":"2023-05-22","createTime":"2023-04-27 11:04:04","updateTime":"2023-04-27 11:04:04","createUser":5},{"roomId":709,"roomName":"Test2","sceneId":658,"userNum":3,"status":1,"beginTime":"2023-04-20","endTime":"2023-05-25","createTime":"2023-04-26 10:53:22","updateTime":"2023-04-26 10:53:22","createUser":5},{"roomId":708,"roomName":"Test1","sceneId":656,"userNum":99,"status":1,"beginTime":"2023-04-26","endTime":"2023-05-24","createTime":"2023-04-26 10:44:13","updateTime":"2023-04-26 10:44:13","createUser":5},{"roomId":707,"roomName":"Test","sceneId":656,"userNum":6,"status":1,"beginTime":"2023-04-12","endTime":"2023-05-09","createTime":"2023-04-26 10:41:45","updateTime":"2023-04-26 10:41:45","createUser":5},{"roomId":706,"roomName":"Test-office","sceneId":658,"userNum":999,"status":1,"beginTime":"2023-04-26","endTime":"2023-05-25","createTime":"2023-04-26 10:24:02","updateTime":"2023-04-26 10:24:02","createUser":5},{"roomId":705,"roomName":"office","sceneId":658,"userNum":6,"status":1,"beginTime":"2023-04-22","endTime":"2023-05-19","createTime":"2023-04-23 14:04:45","updateTime":"2023-04-23 14:04:45","createUser":5},{"roomId":702,"roomName":"Test11","sceneId":657,"userNum":9996,"status":1,"beginTime":"2023-04-21","endTime":"2023-05-19","createTime":"2023-04-18 10:46:48","updateTime":"2023-04-18 10:46:48","createUser":5},{"roomId":700,"roomName":"Test10","sceneId":656,"userNum":2,"status":1,"beginTime":"2023-04-14","endTime":"2023-05-19","createTime":"2023-04-17 11:53:55","updateTime":"2023-04-17 11:53:55","createUser":5},{"roomId":699,"roomName":"Test9","sceneId":657,"userNum":7,"status":1,"beginTime":"2023-04-21","endTime":"2023-05-10","createTime":"2023-04-14 17:09:43","updateTime":"2023-04-17 15:12:42","createUser":5},{"roomId":698,"roomName":"Test8","sceneId":657,"userNum":9999,"status":1,"beginTime":"2023-04-15","endTime":"2023-05-19","createTime":"2023-04-14 17:08:49","updateTime":"2023-04-17 13:43:34","createUser":5}],"total":20,"size":10,"current":1,"orders":[],"optimizeCountSql":true,"searchCount":true,"countId":null,"maxLimit":null,"pages":2}}
+[2023-04-27 15:47:43,607][test_03_room.py 34][INFO]: code ==>> 期望结果：0,实际结果：【0】
+[2023-04-27 15:47:43,608][test_03_room.py 37][INFO]: *************** 结束执行用例 ***************
+[2023-04-27 15:47:43,644][test_03_room.py 48][INFO]: *************** 开始执行用例 ***************
+[2023-04-27 15:47:43,644][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/save
+[2023-04-27 15:47:43,644][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-27 15:47:43,644][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "a9d09413-ec15-4d56-b998-8da7cf851027"
+}
+[2023-04-27 15:47:43,645][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-27 15:47:43,645][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 15:47:43,645][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "beginTime": "2023-04-27",
+    "endTime": "2023-05-22",
+    "roomName": "自动化测试Test",
+    "sceneId": 658,
+    "userNum": 1
+}
+[2023-04-27 15:47:43,645][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-27 15:47:43,645][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-27 15:47:43,666][room.py 65][INFO]: 创建会议 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":null}
+[2023-04-27 15:47:43,666][test_03_room.py 15][INFO]: 步骤1 ==>> 创建会议
+[2023-04-27 15:47:43,666][test_03_room.py 54][INFO]: code ==>> 期望结果：0,实际结果：【0】
+[2023-04-27 15:47:43,666][test_03_room.py 57][INFO]: *************** 结束执行用例 ***************
+[2023-04-27 15:48:09,149][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:48:09,162][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:48:09,167][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-27 15:48:09,167][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}, 'init_sql': {'delete_create_room': "DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'"}} 
+[2023-04-27 15:48:09,168][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-27 15:48:09,170][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [[True, 0, '成功']], 'test_get_room_list': [[1, 10, True, 0, '成功']], 'test_create_room': [['2023-04-27', '2023-05-22', '自动化测试Test', 658, 1, True, 0, '成功']]} 
+[2023-04-27 15:48:09,194][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:48:09,199][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-27 15:48:09,200][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-27 15:48:09,200][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-27 15:48:09,200][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-27 15:48:09,200][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 15:48:09,200][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-27 15:48:09,200][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-27 15:48:09,200][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-27 15:48:09,217][conftest.py 39][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-27 15:48:09,218][test_03_room.py 29][INFO]: *************** 开始执行用例 ***************
+[2023-04-27 15:48:09,219][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/page
+[2023-04-27 15:48:09,219][rest_client.py 52][INFO]: 接口请求方式 ==>> GET
+[2023-04-27 15:48:09,219][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "a9d09413-ec15-4d56-b998-8da7cf851027"
+}
+[2023-04-27 15:48:09,219][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-04-27 15:48:09,219][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 15:48:09,219][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> null
+[2023-04-27 15:48:09,219][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> {'current': 1, 'size': 10}
+[2023-04-27 15:48:09,219][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-04-27 15:48:09,230][room.py 31][INFO]: 获取会议列表 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":{"records":[{"roomId":717,"roomName":"自动化测试Test","sceneId":658,"userNum":1,"status":1,"beginTime":"2023-04-27","endTime":"2023-05-22","createTime":"2023-04-27 15:47:39","updateTime":"2023-04-27 15:47:39","createUser":5},{"roomId":710,"roomName":"Test","sceneId":658,"userNum":1,"status":1,"beginTime":"2023-04-27","endTime":"2023-05-22","createTime":"2023-04-27 11:04:04","updateTime":"2023-04-27 11:04:04","createUser":5},{"roomId":709,"roomName":"Test2","sceneId":658,"userNum":3,"status":1,"beginTime":"2023-04-20","endTime":"2023-05-25","createTime":"2023-04-26 10:53:22","updateTime":"2023-04-26 10:53:22","createUser":5},{"roomId":708,"roomName":"Test1","sceneId":656,"userNum":99,"status":1,"beginTime":"2023-04-26","endTime":"2023-05-24","createTime":"2023-04-26 10:44:13","updateTime":"2023-04-26 10:44:13","createUser":5},{"roomId":707,"roomName":"Test","sceneId":656,"userNum":6,"status":1,"beginTime":"2023-04-12","endTime":"2023-05-09","createTime":"2023-04-26 10:41:45","updateTime":"2023-04-26 10:41:45","createUser":5},{"roomId":706,"roomName":"Test-office","sceneId":658,"userNum":999,"status":1,"beginTime":"2023-04-26","endTime":"2023-05-25","createTime":"2023-04-26 10:24:02","updateTime":"2023-04-26 10:24:02","createUser":5},{"roomId":705,"roomName":"office","sceneId":658,"userNum":6,"status":1,"beginTime":"2023-04-22","endTime":"2023-05-19","createTime":"2023-04-23 14:04:45","updateTime":"2023-04-23 14:04:45","createUser":5},{"roomId":702,"roomName":"Test11","sceneId":657,"userNum":9996,"status":1,"beginTime":"2023-04-21","endTime":"2023-05-19","createTime":"2023-04-18 10:46:48","updateTime":"2023-04-18 10:46:48","createUser":5},{"roomId":700,"roomName":"Test10","sceneId":656,"userNum":2,"status":1,"beginTime":"2023-04-14","endTime":"2023-05-19","createTime":"2023-04-17 11:53:55","updateTime":"2023-04-17 11:53:55","createUser":5},{"roomId":699,"roomName":"Test9","sceneId":657,"userNum":7,"status":1,"beginTime":"2023-04-21","endTime":"2023-05-10","createTime":"2023-04-14 17:09:43","updateTime":"2023-04-17 15:12:42","createUser":5}],"total":21,"size":10,"current":1,"orders":[],"optimizeCountSql":true,"searchCount":true,"countId":null,"maxLimit":null,"pages":3}}
+[2023-04-27 15:48:09,232][test_03_room.py 34][INFO]: code ==>> 期望结果：0,实际结果：【0】
+[2023-04-27 15:48:09,232][test_03_room.py 37][INFO]: *************** 结束执行用例 ***************
+[2023-04-27 15:48:09,245][conftest.py 28][INFO]: ******************************
+[2023-04-27 15:48:09,245][conftest.py 29][INFO]: 前置步骤开始 ==>> 清理数据
+[2023-04-27 15:48:09,245][conftest.py 65][INFO]: 创建房间操作：删除已有房间--准备创建新房间
+[2023-04-27 15:48:09,245][conftest.py 66][INFO]: 执行前置SQL:DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'
+[2023-04-27 15:48:09,247][test_03_room.py 48][INFO]: *************** 开始执行用例 ***************
+[2023-04-27 15:48:09,247][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/save
+[2023-04-27 15:48:09,247][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-27 15:48:09,247][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "a9d09413-ec15-4d56-b998-8da7cf851027"
+}
+[2023-04-27 15:48:09,247][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-27 15:48:09,247][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 15:48:09,247][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "beginTime": "2023-04-27",
+    "endTime": "2023-05-22",
+    "roomName": "自动化测试Test",
+    "sceneId": 658,
+    "userNum": 1
+}
+[2023-04-27 15:48:09,247][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-27 15:48:09,247][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-27 15:48:09,263][room.py 65][INFO]: 创建会议 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":null}
+[2023-04-27 15:48:09,263][test_03_room.py 15][INFO]: 步骤1 ==>> 创建会议
+[2023-04-27 15:48:09,263][test_03_room.py 54][INFO]: code ==>> 期望结果：0,实际结果：【0】
+[2023-04-27 15:48:09,264][test_03_room.py 57][INFO]: *************** 结束执行用例 ***************
+[2023-04-27 15:48:09,280][conftest.py 34][INFO]: 后置步骤开始 ==>> 清理数据
+[2023-04-27 15:48:09,280][conftest.py 70][INFO]: 创建房间操作：删除已创建的房间
+[2023-04-27 15:48:09,280][conftest.py 71][INFO]: 执行后置SQL:DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'
+[2023-04-27 15:49:31,621][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:49:31,634][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:49:31,647][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-27 15:49:31,648][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}, 'init_sql': {'delete_create_room': "DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'"}} 
+[2023-04-27 15:49:31,648][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-27 15:49:31,650][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [[True, 0, '成功']], 'test_get_room_list': [[1, 10, True, 0, '成功']], 'test_create_room': [['2023-04-27', '2023-05-22', '自动化测试Test', 658, 1, True, 0, '成功']]} 
+[2023-04-27 15:49:31,672][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 15:49:31,678][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-27 15:49:31,679][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-27 15:49:31,679][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-27 15:49:31,679][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-27 15:49:31,679][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 15:49:31,679][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-27 15:49:31,679][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-27 15:49:31,679][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-27 15:49:31,696][conftest.py 39][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-27 15:49:31,697][test_03_room.py 29][INFO]: *************** 开始执行用例 ***************
+[2023-04-27 15:49:31,697][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/page
+[2023-04-27 15:49:31,697][rest_client.py 52][INFO]: 接口请求方式 ==>> GET
+[2023-04-27 15:49:31,697][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "a9d09413-ec15-4d56-b998-8da7cf851027"
+}
+[2023-04-27 15:49:31,698][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-04-27 15:49:31,698][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 15:49:31,698][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> null
+[2023-04-27 15:49:31,698][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> {'current': 1, 'size': 10}
+[2023-04-27 15:49:31,698][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-04-27 15:49:31,712][room.py 31][INFO]: 获取会议列表 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":{"records":[{"roomId":710,"roomName":"Test","sceneId":658,"userNum":1,"status":1,"beginTime":"2023-04-27","endTime":"2023-05-22","createTime":"2023-04-27 11:04:04","updateTime":"2023-04-27 11:04:04","createUser":5},{"roomId":709,"roomName":"Test2","sceneId":658,"userNum":3,"status":1,"beginTime":"2023-04-20","endTime":"2023-05-25","createTime":"2023-04-26 10:53:22","updateTime":"2023-04-26 10:53:22","createUser":5},{"roomId":708,"roomName":"Test1","sceneId":656,"userNum":99,"status":1,"beginTime":"2023-04-26","endTime":"2023-05-24","createTime":"2023-04-26 10:44:13","updateTime":"2023-04-26 10:44:13","createUser":5},{"roomId":707,"roomName":"Test","sceneId":656,"userNum":6,"status":1,"beginTime":"2023-04-12","endTime":"2023-05-09","createTime":"2023-04-26 10:41:45","updateTime":"2023-04-26 10:41:45","createUser":5},{"roomId":706,"roomName":"Test-office","sceneId":658,"userNum":999,"status":1,"beginTime":"2023-04-26","endTime":"2023-05-25","createTime":"2023-04-26 10:24:02","updateTime":"2023-04-26 10:24:02","createUser":5},{"roomId":705,"roomName":"office","sceneId":658,"userNum":6,"status":1,"beginTime":"2023-04-22","endTime":"2023-05-19","createTime":"2023-04-23 14:04:45","updateTime":"2023-04-23 14:04:45","createUser":5},{"roomId":702,"roomName":"Test11","sceneId":657,"userNum":9996,"status":1,"beginTime":"2023-04-21","endTime":"2023-05-19","createTime":"2023-04-18 10:46:48","updateTime":"2023-04-18 10:46:48","createUser":5},{"roomId":700,"roomName":"Test10","sceneId":656,"userNum":2,"status":1,"beginTime":"2023-04-14","endTime":"2023-05-19","createTime":"2023-04-17 11:53:55","updateTime":"2023-04-17 11:53:55","createUser":5},{"roomId":699,"roomName":"Test9","sceneId":657,"userNum":7,"status":1,"beginTime":"2023-04-21","endTime":"2023-05-10","createTime":"2023-04-14 17:09:43","updateTime":"2023-04-17 15:12:42","createUser":5},{"roomId":698,"roomName":"Test8","sceneId":657,"userNum":9999,"status":1,"beginTime":"2023-04-15","endTime":"2023-05-19","createTime":"2023-04-14 17:08:49","updateTime":"2023-04-17 13:43:34","createUser":5}],"total":20,"size":10,"current":1,"orders":[],"optimizeCountSql":true,"searchCount":true,"countId":null,"maxLimit":null,"pages":2}}
+[2023-04-27 15:49:31,713][test_03_room.py 34][INFO]: code ==>> 期望结果：0,实际结果：【0】
+[2023-04-27 15:49:31,713][test_03_room.py 37][INFO]: *************** 结束执行用例 ***************
+[2023-04-27 15:49:31,725][test_03_room.py 48][INFO]: *************** 开始执行用例 ***************
+[2023-04-27 15:49:31,725][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/save
+[2023-04-27 15:49:31,725][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-27 15:49:31,725][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "a9d09413-ec15-4d56-b998-8da7cf851027"
+}
+[2023-04-27 15:49:31,725][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-27 15:49:31,725][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 15:49:31,725][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "beginTime": "2023-04-27",
+    "endTime": "2023-05-22",
+    "roomName": "自动化测试Test",
+    "sceneId": 658,
+    "userNum": 1
+}
+[2023-04-27 15:49:31,725][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-27 15:49:31,726][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-27 15:49:31,740][room.py 65][INFO]: 创建会议 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":null}
+[2023-04-27 15:49:31,740][test_03_room.py 15][INFO]: 步骤1 ==>> 创建会议
+[2023-04-27 15:49:31,740][test_03_room.py 54][INFO]: code ==>> 期望结果：0,实际结果：【0】
+[2023-04-27 15:49:31,740][test_03_room.py 57][INFO]: *************** 结束执行用例 ***************
+[2023-04-27 17:20:55,694][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 17:20:55,707][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 17:20:55,735][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-27 17:20:55,736][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}, 'init_sql': {'delete_create_room': "DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'"}} 
+[2023-04-27 17:20:55,736][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-27 17:20:55,738][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [[True, 0, '成功']], 'test_get_room_list': [[1, 10, True, 0, '成功']], 'test_create_room': [['2023-04-27', '2023-05-22', '自动化测试Test', 658, 1, True, 0, '成功']], 'test_get_room_datail': [[710, True, 0, '成功']]} 
+[2023-04-27 17:20:55,765][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-27 17:20:55,773][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-27 17:20:55,773][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-27 17:20:55,773][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-27 17:20:55,773][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-27 17:20:55,773][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 17:20:55,773][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-27 17:20:55,773][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-27 17:20:55,773][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-27 17:20:55,798][conftest.py 39][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-27 17:20:55,799][test_03_room.py 34][INFO]: *************** 开始执行用例 ***************
+[2023-04-27 17:20:55,799][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/page
+[2023-04-27 17:20:55,799][rest_client.py 52][INFO]: 接口请求方式 ==>> GET
+[2023-04-27 17:20:55,799][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "a9d09413-ec15-4d56-b998-8da7cf851027"
+}
+[2023-04-27 17:20:55,799][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-04-27 17:20:55,799][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 17:20:55,799][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> null
+[2023-04-27 17:20:55,799][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> {'current': 1, 'size': 10}
+[2023-04-27 17:20:55,799][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-04-27 17:20:55,817][room.py 31][INFO]: 获取会议列表 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":{"records":[{"roomId":719,"roomName":"自动化测试Test","sceneId":658,"userNum":1,"status":1,"beginTime":"2023-04-27","endTime":"2023-05-22","createTime":"2023-04-27 15:49:27","updateTime":"2023-04-27 15:49:27","createUser":5},{"roomId":710,"roomName":"Test","sceneId":658,"userNum":1,"status":1,"beginTime":"2023-04-27","endTime":"2023-05-22","createTime":"2023-04-27 11:04:04","updateTime":"2023-04-27 11:04:04","createUser":5},{"roomId":709,"roomName":"Test2","sceneId":658,"userNum":3,"status":1,"beginTime":"2023-04-20","endTime":"2023-05-25","createTime":"2023-04-26 10:53:22","updateTime":"2023-04-26 10:53:22","createUser":5},{"roomId":708,"roomName":"Test1","sceneId":656,"userNum":99,"status":1,"beginTime":"2023-04-26","endTime":"2023-05-24","createTime":"2023-04-26 10:44:13","updateTime":"2023-04-26 10:44:13","createUser":5},{"roomId":707,"roomName":"Test","sceneId":656,"userNum":6,"status":1,"beginTime":"2023-04-12","endTime":"2023-05-09","createTime":"2023-04-26 10:41:45","updateTime":"2023-04-26 10:41:45","createUser":5},{"roomId":706,"roomName":"Test-office","sceneId":658,"userNum":999,"status":1,"beginTime":"2023-04-26","endTime":"2023-05-25","createTime":"2023-04-26 10:24:02","updateTime":"2023-04-26 10:24:02","createUser":5},{"roomId":705,"roomName":"office","sceneId":658,"userNum":6,"status":1,"beginTime":"2023-04-22","endTime":"2023-05-19","createTime":"2023-04-23 14:04:45","updateTime":"2023-04-23 14:04:45","createUser":5},{"roomId":702,"roomName":"Test11","sceneId":657,"userNum":9996,"status":1,"beginTime":"2023-04-21","endTime":"2023-05-19","createTime":"2023-04-18 10:46:48","updateTime":"2023-04-18 10:46:48","createUser":5},{"roomId":700,"roomName":"Test10","sceneId":656,"userNum":2,"status":1,"beginTime":"2023-04-14","endTime":"2023-05-19","createTime":"2023-04-17 11:53:55","updateTime":"2023-04-17 11:53:55","createUser":5},{"roomId":699,"roomName":"Test9","sceneId":657,"userNum":7,"status":1,"beginTime":"2023-04-21","endTime":"2023-05-10","createTime":"2023-04-14 17:09:43","updateTime":"2023-04-17 15:12:42","createUser":5}],"total":21,"size":10,"current":1,"orders":[],"optimizeCountSql":true,"searchCount":true,"countId":null,"maxLimit":null,"pages":3}}
+[2023-04-27 17:20:55,817][test_03_room.py 39][INFO]: code ==>> 期望结果：0,实际结果：【0】
+[2023-04-27 17:20:55,818][test_03_room.py 42][INFO]: *************** 结束执行用例 ***************
+[2023-04-27 17:20:55,828][conftest.py 28][INFO]: ******************************
+[2023-04-27 17:20:55,829][conftest.py 29][INFO]: 前置步骤开始 ==>> 清理数据
+[2023-04-27 17:20:55,829][conftest.py 65][INFO]: 创建房间操作：删除已有房间--准备创建新房间
+[2023-04-27 17:20:55,829][conftest.py 66][INFO]: 执行前置SQL:DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'
+[2023-04-27 17:20:55,830][test_03_room.py 53][INFO]: *************** 开始执行用例 ***************
+[2023-04-27 17:20:55,830][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/save
+[2023-04-27 17:20:55,830][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-27 17:20:55,831][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "a9d09413-ec15-4d56-b998-8da7cf851027"
+}
+[2023-04-27 17:20:55,831][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-27 17:20:55,831][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 17:20:55,831][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "beginTime": "2023-04-27",
+    "endTime": "2023-05-22",
+    "roomName": "自动化测试Test",
+    "sceneId": 658,
+    "userNum": 1
+}
+[2023-04-27 17:20:55,831][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-27 17:20:55,831][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-27 17:20:55,846][room.py 65][INFO]: 创建会议 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":null}
+[2023-04-27 17:20:55,847][test_03_room.py 15][INFO]: 步骤1 ==>> 创建会议
+[2023-04-27 17:20:55,847][test_03_room.py 59][INFO]: code ==>> 期望结果：0,实际结果：【0】
+[2023-04-27 17:20:55,847][test_03_room.py 62][INFO]: *************** 结束执行用例 ***************
+[2023-04-27 17:20:55,854][conftest.py 34][INFO]: 后置步骤开始 ==>> 清理数据
+[2023-04-27 17:20:55,855][conftest.py 70][INFO]: 创建房间操作：删除已创建的房间
+[2023-04-27 17:20:55,855][conftest.py 71][INFO]: 执行后置SQL:DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'
+[2023-04-27 17:20:55,859][test_03_room.py 70][INFO]: *************** 开始执行用例 ***************
+[2023-04-27 17:20:55,859][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/get
+[2023-04-27 17:20:55,859][rest_client.py 52][INFO]: 接口请求方式 ==>> GET
+[2023-04-27 17:20:55,859][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "a9d09413-ec15-4d56-b998-8da7cf851027"
+}
+[2023-04-27 17:20:55,859][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-27 17:20:55,859][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-27 17:20:55,859][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "roomId": 710
+}
+[2023-04-27 17:20:55,859][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-27 17:20:55,860][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-27 17:20:55,877][room.py 92][INFO]: 获取会议详情 ==>> 返回结果 ==>> {"success":false,"code":-1,"message":"服务异常,请稍后再试!","data":null}
+[2023-04-27 17:20:55,877][test_03_room.py 20][INFO]: 步骤1 ==>> 获取会议详情

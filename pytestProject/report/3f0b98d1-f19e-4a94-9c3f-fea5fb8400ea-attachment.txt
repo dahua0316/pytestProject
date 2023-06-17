@@ -1,0 +1,43 @@
+[32mINFO    [0m log:conftest.py:28 ******************************
+[32mINFO    [0m log:conftest.py:29 前置步骤开始 ==>> 清理数据
+[32mINFO    [0m log:conftest.py:65 创建房间操作：删除已有房间--准备创建新房间
+[32mINFO    [0m log:conftest.py:66 执行前置SQL:DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'
+[32mINFO    [0m log:rest_client.py:51 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[32mINFO    [0m log:rest_client.py:52 接口请求方式 ==>> POST
+[32mINFO    [0m log:rest_client.py:54 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[32mINFO    [0m log:rest_client.py:55 接口请求 params 参数 ==>> null
+[32mINFO    [0m log:rest_client.py:56 接口请求体 data 参数 ==>> null
+[32mINFO    [0m log:rest_client.py:57 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[32mINFO    [0m log:rest_client.py:58 接口上传附件 files 参数 ==>> None
+[32mINFO    [0m log:rest_client.py:59 接口 cookies 参数 ==>> null
+[32mINFO    [0m log:conftest.py:39 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[32mINFO    [0m log:test_03_room.py:53 *************** 开始执行用例 ***************
+[32mINFO    [0m log:rest_client.py:51 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/save
+[32mINFO    [0m log:rest_client.py:52 接口请求方式 ==>> POST
+[32mINFO    [0m log:rest_client.py:54 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "d55a4a57-321b-43c2-8a4c-949489cc741b"
+}
+[32mINFO    [0m log:rest_client.py:55 接口请求 params 参数 ==>> null
+[32mINFO    [0m log:rest_client.py:56 接口请求体 data 参数 ==>> null
+[32mINFO    [0m log:rest_client.py:57 接口请求体 json 参数 ==>> {
+    "beginTime": "2023-04-27",
+    "endTime": "2023-05-22",
+    "roomName": "自动化测试Test",
+    "sceneId": 658,
+    "userNum": 1
+}
+[32mINFO    [0m log:rest_client.py:58 接口上传附件 files 参数 ==>> None
+[32mINFO    [0m log:rest_client.py:59 接口 cookies 参数 ==>> null
+[32mINFO    [0m log:room.py:65 创建会议 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":null}
+[32mINFO    [0m log:test_03_room.py:15 步骤1 ==>> 创建会议
+[32mINFO    [0m log:test_03_room.py:59 code ==>> 期望结果：0,实际结果：【0】
+[32mINFO    [0m log:test_03_room.py:62 *************** 结束执行用例 ***************
+[32mINFO    [0m log:conftest.py:34 后置步骤开始 ==>> 清理数据
+[32mINFO    [0m log:conftest.py:70 创建房间操作：删除已创建的房间
+[32mINFO    [0m log:conftest.py:71 执行后置SQL:DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'

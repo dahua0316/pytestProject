@@ -1,0 +1,45 @@
+test_login_user:
+  # 用户名,密码,期望结果,期望返回码,期望返回信息
+  # username, password, except_result, except_code, except_message
+  - [ "dahua", "123456", True, 0, "成功" ]
+  - [ "dahua1", "123456", False, 401, "密码或者用户名错误" ]
+
+
+test_logout_user:
+  #except_result, except_code, except_message
+  - [ True, 0, "成功" ]
+
+
+test_get_room_list:
+  # 当前页，每页数量，期望返回结果，期望返回码，期望返回信息
+  # current,size, except_result, except_code, except_message
+  - [ 1, 10 , True, 0, "成功" ]
+
+
+test_create_room:
+  # 开始时间,结束时间,房间名称,场景ID(scenid的值与资产场景对应),最大用户数,期望返回结果，期望返回码，期望返回信息
+  # beginTime,endTime,roomName,sceneId,userNum,except_result, except_code, except_message
+  - [ "2023-04-27","2023-05-22","自动化测试Test",658,1,True,0,"成功" ]
+
+
+test_get_room_datail:
+  # 会议ID,期望返回结果，期望返回状态码，期望返回信息
+  # rooId, except_result, except_code, except_message
+  - [ 710, True, 0, "成功" ]
+
+
+test_get_ticket_list:
+  # 会议ID, 当前页数, 每页数量, 期望返回结果, 期望返回状态码, 期望返回信息
+  # roomId, curuent , size , except_result, except_code, except_message
+  - [ 710, 1, 10, True, 0, "成功" ]
+
+
+test_genarate_ticket:
+  # 到期时间， 房间Id, 生成门票数量， 期望返回结果， 期望返回状态码， 期望返回信息
+  # expiredTime, roomId , ticketAmount, except_result, except_code, except_message
+  - [ "2023-05-26 15:14:11",710,1,True,0,"成功" ]
+
+test_set_aside_ticket:
+  # 门票Id,期望返回结果， 期望返回状态码， 期望返回信息
+  # ticketId, except_result, except_code, except_message
+  - [ 12993, True, 0, "成功" ]

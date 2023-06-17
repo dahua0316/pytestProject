@@ -1,0 +1,27 @@
+[2023-05-04 19:14:19,339][conftest.py 28][INFO]: ******************************
+[2023-05-04 19:14:19,340][conftest.py 29][INFO]: 前置步骤开始 ==>> 清理数据
+[2023-05-04 19:14:19,340][conftest.py 65][INFO]: 创建房间操作：删除已有房间--准备创建新房间
+[2023-05-04 19:14:19,340][conftest.py 66][INFO]: 执行前置SQL:DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'
+[2023-05-04 19:14:19,342][test_03_room.py 53][INFO]: *************** 开始执行用例 ***************
+[2023-05-04 19:14:19,342][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/save
+[2023-05-04 19:14:19,342][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-05-04 19:14:19,342][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "e6c02092-5e30-40af-b1c1-fafcdd911943"
+}
+[2023-05-04 19:14:19,342][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-05-04 19:14:19,343][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-05-04 19:14:19,343][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "beginTime": "2023-04-27",
+    "endTime": "2023-05-22",
+    "roomName": "自动化测试Test",
+    "sceneId": 658,
+    "userNum": 1
+}
+[2023-05-04 19:14:19,343][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-05-04 19:14:19,343][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-05-04 19:14:19,362][room.py 65][INFO]: 创建会议 ==>> 返回结果 ==>> {"code":403,"message":"token 未认证","success":false}
+[2023-05-04 19:14:19,363][test_03_room.py 15][INFO]: 步骤1 ==>> 创建会议
+[2023-05-04 19:14:19,375][conftest.py 34][INFO]: 后置步骤开始 ==>> 清理数据
+[2023-05-04 19:14:19,375][conftest.py 70][INFO]: 创建房间操作：删除已创建的房间
+[2023-05-04 19:14:19,375][conftest.py 71][INFO]: 执行后置SQL:DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'

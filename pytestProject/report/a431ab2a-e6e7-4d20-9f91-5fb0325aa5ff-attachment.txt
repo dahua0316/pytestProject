@@ -1,0 +1,17 @@
+[32mINFO    [0m log:conftest.py:28 ******************************
+[32mINFO    [0m log:conftest.py:29 前置步骤开始 ==>> 清理数据
+[32mINFO    [0m log:conftest.py:80 更新门票操作：更新门票状态--准备作废门票
+[32mINFO    [0m log:conftest.py:81 执行前置SQL:UPDATE rays_cloud.t_ticket SET status= 1 where id = 12993;
+[32mINFO    [0m log:test_04_ticket.py:75 *************** 开始执行用例 ***************
+[32mINFO    [0m log:rest_client.py:51 接口请求地址 ==>> http://192.168.50.30:8086/api/ticket/banned/12993
+[32mINFO    [0m log:rest_client.py:52 接口请求方式 ==>> PUT
+[32mINFO    [0m log:rest_client.py:54 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "ee848913-aad0-459a-b914-27393887664a"
+}
+[32mINFO    [0m log:rest_client.py:55 接口请求 params 参数 ==>> null
+[32mINFO    [0m log:rest_client.py:56 接口请求体 data 参数 ==>> null
+[32mINFO    [0m log:rest_client.py:57 接口请求体 json 参数 ==>> null
+[32mINFO    [0m log:rest_client.py:58 接口上传附件 files 参数 ==>> None
+[32mINFO    [0m log:rest_client.py:59 接口 cookies 参数 ==>> null
+[32mINFO    [0m log:test_04_ticket.py:22 步骤3 ==>> 门票作废

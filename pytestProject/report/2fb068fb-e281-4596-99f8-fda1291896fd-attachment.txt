@@ -1,0 +1,30 @@
+[2023-05-04 19:08:39,443][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-05-04 19:08:39,443][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-05-04 19:08:39,443][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-05-04 19:08:39,443][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-05-04 19:08:39,444][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-05-04 19:08:39,444][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-05-04 19:08:39,444][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-05-04 19:08:39,444][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-05-04 19:08:39,452][conftest.py 39][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-05-04 19:08:39,453][test_02_logout_user.py 26][INFO]: *************** 开始执行用例 ***************
+[2023-05-04 19:08:39,454][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/logout
+[2023-05-04 19:08:39,454][rest_client.py 52][INFO]: 接口请求方式 ==>> PUT
+[2023-05-04 19:08:39,454][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "25207b1d-b0e5-4c71-8226-dfac66dc8ec9"
+}
+[2023-05-04 19:08:39,454][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-05-04 19:08:39,454][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-05-04 19:08:39,454][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> null
+[2023-05-04 19:08:39,454][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-05-04 19:08:39,454][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-05-04 19:08:39,478][user.py 52][INFO]: 退出登录 == >> 返回结果 == >> {"success":true,"code":0,"message":"成功","data":null}
+[2023-05-04 19:08:39,478][test_02_logout_user.py 10][INFO]: 步骤1 ==>> 退出登录token：25207b1d-b0e5-4c71-8226-dfac66dc8ec9
+[2023-05-04 19:08:39,478][test_02_logout_user.py 32][INFO]: code ==>> 期望结果：0,实际结果：【0】
+[2023-05-04 19:08:39,479][test_02_logout_user.py 35][INFO]: *************** 结束执行用例 ***************

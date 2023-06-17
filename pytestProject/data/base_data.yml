@@ -1,0 +1,7 @@
+init_admin_user:
+  username: "dahua"
+  password: "123456"
+
+init_sql:
+  delete_create_room: "DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'"
+  updata_ticket_status: "UPDATE rays_cloud.t_ticket SET status= 1 where id = 12993;"

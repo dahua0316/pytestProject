@@ -1,0 +1,19 @@
+[2023-05-04 18:48:48,403][test_03_room.py 34][INFO]: *************** 开始执行用例 ***************
+[2023-05-04 18:48:48,403][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/cloud/room/page
+[2023-05-04 18:48:48,403][rest_client.py 52][INFO]: 接口请求方式 ==>> GET
+[2023-05-04 18:48:48,403][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "84bb9e13-aa41-46fc-8d21-d0ad86a2f74a"
+}
+[2023-05-04 18:48:48,404][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-05-04 18:48:48,404][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-05-04 18:48:48,404][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> null
+[2023-05-04 18:48:48,404][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> {'current': 1, 'size': 10}
+[2023-05-04 18:48:48,404][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> {
+    "current": 1,
+    "size": 10
+}
+[2023-05-04 18:48:48,413][room.py 31][INFO]: 获取会议列表 ==>> 返回结果 ==>> {"code":403,"message":"token 未认证","success":false}

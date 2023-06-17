@@ -1,0 +1,8 @@
+[32mINFO    [0m log:conftest.py:28 ******************************
+[32mINFO    [0m log:conftest.py:29 前置步骤开始 ==>> 清理数据
+[32mINFO    [0m log:conftest.py:65 创建房间操作：删除已有房间--准备创建新房间
+[32mINFO    [0m log:conftest.py:66 执行前置SQL:DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'
+[32mINFO    [0m log:test_03_room.py:53 *************** 开始执行用例 ***************
+[32mINFO    [0m log:conftest.py:34 后置步骤开始 ==>> 清理数据
+[32mINFO    [0m log:conftest.py:70 创建房间操作：删除已创建的房间
+[32mINFO    [0m log:conftest.py:71 执行后置SQL:DELETE  FROM rays_cloud.t_room where room_name = '自动化测试Test'

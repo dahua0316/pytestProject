@@ -1,0 +1,18 @@
+[32mINFO    [0m log:test_04_ticket.py:55 *************** 开始执行用例 ***************
+[32mINFO    [0m log:rest_client.py:51 接口请求地址 ==>> http://192.168.50.30:8086/api/ticket/genarate
+[32mINFO    [0m log:rest_client.py:52 接口请求方式 ==>> POST
+[32mINFO    [0m log:rest_client.py:54 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "25207b1d-b0e5-4c71-8226-dfac66dc8ec9"
+}
+[32mINFO    [0m log:rest_client.py:55 接口请求 params 参数 ==>> null
+[32mINFO    [0m log:rest_client.py:56 接口请求体 data 参数 ==>> null
+[32mINFO    [0m log:rest_client.py:57 接口请求体 json 参数 ==>> {
+    "expiredTime": "2023-05-05 19:08:39",
+    "roomId": 710,
+    "ticketAmount": 1
+}
+[32mINFO    [0m log:rest_client.py:58 接口上传附件 files 参数 ==>> None
+[32mINFO    [0m log:rest_client.py:59 接口 cookies 参数 ==>> null
+[32mINFO    [0m log:ticket.py:64 门票生成 ==>> 返回结果 ==>> {"code":403,"message":"token 未认证","success":false}
+[32mINFO    [0m log:test_04_ticket.py:17 步骤2 ==>> 门票生成

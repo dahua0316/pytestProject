@@ -1,0 +1,565 @@
+[2023-04-19 14:40:07,809][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-19 14:40:07,811][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [['Ture', 0, '成功']]} 
+[2023-04-19 14:40:07,909][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-19 14:41:26,016][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-19 14:41:26,017][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [['Ture', 0, '成功']]} 
+[2023-04-19 14:41:26,113][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-19 14:41:26,121][test_01_login_user.py 27][INFO]: *************** 开始执行用例 ***************
+[2023-04-19 14:41:26,121][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-19 14:41:26,121][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-19 14:41:26,121][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-19 14:41:26,121][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 14:41:26,121][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 14:41:26,121][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-19 14:41:26,121][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 14:41:26,122][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 14:41:26,143][user.py 30][INFO]: 登录用户 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":"26fc4048-3fdd-45b2-8e86-b636d9266303"}
+[2023-04-19 14:41:26,144][test_01_login_user.py 11][INFO]: 步骤1==>>登录用户：dahua
+[2023-04-19 14:41:26,229][test_01_login_user.py 27][INFO]: *************** 开始执行用例 ***************
+[2023-04-19 14:41:26,229][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-19 14:41:26,229][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-19 14:41:26,229][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-19 14:41:26,229][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 14:41:26,229][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 14:41:26,229][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua1"
+}
+[2023-04-19 14:41:26,229][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 14:41:26,230][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 14:41:26,244][user.py 30][INFO]: 登录用户 ==>> 返回结果 ==>> {"success":false,"code":401,"message":"密码或者用户名错误","data":null}
+[2023-04-19 14:41:26,245][test_01_login_user.py 11][INFO]: 步骤1==>>登录用户：dahua1
+[2023-04-19 14:41:50,782][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-19 14:41:50,784][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [['Ture', 0, '成功']]} 
+[2023-04-19 14:41:50,877][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-19 14:41:50,885][test_01_login_user.py 27][INFO]: *************** 开始执行用例 ***************
+[2023-04-19 14:41:50,885][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-19 14:41:50,885][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-19 14:41:50,885][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-19 14:41:50,885][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 14:41:50,885][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 14:41:50,885][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-19 14:41:50,886][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 14:41:50,886][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 14:41:50,904][user.py 30][INFO]: 登录用户 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":"26fc4048-3fdd-45b2-8e86-b636d9266303"}
+[2023-04-19 14:41:50,905][test_01_login_user.py 11][INFO]: 步骤1==>>登录用户：dahua
+[2023-04-19 14:41:50,993][test_01_login_user.py 27][INFO]: *************** 开始执行用例 ***************
+[2023-04-19 14:41:50,993][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-19 14:41:50,993][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-19 14:41:50,993][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-19 14:41:50,993][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 14:41:50,993][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 14:41:50,993][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua1"
+}
+[2023-04-19 14:41:50,994][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 14:41:50,994][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 14:41:51,005][user.py 30][INFO]: 登录用户 ==>> 返回结果 ==>> {"success":false,"code":401,"message":"密码或者用户名错误","data":null}
+[2023-04-19 14:41:51,005][test_01_login_user.py 11][INFO]: 步骤1==>>登录用户：dahua1
+[2023-04-19 14:45:12,939][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-19 14:45:12,940][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [['Ture', 0, '成功']]} 
+[2023-04-19 14:45:13,030][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-19 14:45:37,287][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-19 14:45:37,288][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [['Ture', 0, '成功']]} 
+[2023-04-19 14:45:37,379][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-19 14:45:37,385][test_01_login_user.py 27][INFO]: *************** 开始执行用例 ***************
+[2023-04-19 14:45:37,386][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-19 14:45:37,386][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-19 14:45:37,386][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-19 14:45:37,386][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 14:45:37,386][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 14:45:37,386][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-19 14:45:37,386][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 14:45:37,386][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 14:45:37,409][user.py 30][INFO]: 登录用户 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":"26fc4048-3fdd-45b2-8e86-b636d9266303"}
+[2023-04-19 14:45:37,410][test_01_login_user.py 11][INFO]: 步骤1==>>登录用户：dahua
+[2023-04-19 14:45:37,511][test_01_login_user.py 27][INFO]: *************** 开始执行用例 ***************
+[2023-04-19 14:45:37,511][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-19 14:45:37,511][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-19 14:45:37,511][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-19 14:45:37,511][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 14:45:37,511][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 14:45:37,511][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua1"
+}
+[2023-04-19 14:45:37,511][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 14:45:37,511][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 14:45:37,524][user.py 30][INFO]: 登录用户 ==>> 返回结果 ==>> {"success":false,"code":401,"message":"密码或者用户名错误","data":null}
+[2023-04-19 14:45:37,525][test_01_login_user.py 11][INFO]: 步骤1==>>登录用户：dahua1
+[2023-04-19 14:47:04,991][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-19 14:47:04,992][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [['Ture', 0, '成功']]} 
+[2023-04-19 14:47:05,080][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-19 14:47:05,088][test_01_login_user.py 27][INFO]: *************** 开始执行用例 ***************
+[2023-04-19 14:47:05,088][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-19 14:47:05,088][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-19 14:47:05,088][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-19 14:47:05,088][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 14:47:05,088][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 14:47:05,088][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-19 14:47:05,089][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 14:47:05,089][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 14:47:05,111][user.py 30][INFO]: 登录用户 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":"26fc4048-3fdd-45b2-8e86-b636d9266303"}
+[2023-04-19 14:47:05,111][test_01_login_user.py 11][INFO]: 步骤1==>>登录用户：dahua
+[2023-04-19 14:47:05,194][test_01_login_user.py 27][INFO]: *************** 开始执行用例 ***************
+[2023-04-19 14:47:05,195][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-19 14:47:05,195][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-19 14:47:05,195][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-19 14:47:05,195][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 14:47:05,195][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 14:47:05,195][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua1"
+}
+[2023-04-19 14:47:05,195][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 14:47:05,195][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 14:47:05,211][user.py 30][INFO]: 登录用户 ==>> 返回结果 ==>> {"success":false,"code":401,"message":"密码或者用户名错误","data":null}
+[2023-04-19 14:47:05,211][test_01_login_user.py 11][INFO]: 步骤1==>>登录用户：dahua1
+[2023-04-19 14:49:11,890][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-19 14:49:11,891][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [['Ture', 0, '成功']]} 
+[2023-04-19 14:49:11,988][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-19 14:49:11,996][test_01_login_user.py 27][INFO]: *************** 开始执行用例 ***************
+[2023-04-19 14:49:11,996][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-19 14:49:11,996][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-19 14:49:11,997][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-19 14:49:11,997][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 14:49:11,997][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 14:49:11,997][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-19 14:49:11,997][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 14:49:11,997][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 14:49:12,018][user.py 30][INFO]: 登录用户 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":"26fc4048-3fdd-45b2-8e86-b636d9266303"}
+[2023-04-19 14:49:12,018][test_01_login_user.py 11][INFO]: 步骤1==>>登录用户：dahua
+[2023-04-19 14:49:12,019][test_01_login_user.py 32][INFO]: code ==>> 期望结果：0， 实际结果：【 0 】
+[2023-04-19 14:49:12,019][test_01_login_user.py 35][INFO]: **************** 结束执行用例 **************
+[2023-04-19 14:49:12,025][test_01_login_user.py 27][INFO]: *************** 开始执行用例 ***************
+[2023-04-19 14:49:12,025][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-19 14:49:12,025][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-19 14:49:12,025][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-19 14:49:12,025][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 14:49:12,025][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 14:49:12,025][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua1"
+}
+[2023-04-19 14:49:12,025][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 14:49:12,025][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 14:49:12,035][user.py 30][INFO]: 登录用户 ==>> 返回结果 ==>> {"success":false,"code":401,"message":"密码或者用户名错误","data":null}
+[2023-04-19 14:49:12,035][test_01_login_user.py 11][INFO]: 步骤1==>>登录用户：dahua1
+[2023-04-19 14:49:12,035][test_01_login_user.py 32][INFO]: code ==>> 期望结果：401， 实际结果：【 401 】
+[2023-04-19 14:49:12,036][test_01_login_user.py 35][INFO]: **************** 结束执行用例 **************
+[2023-04-19 15:21:07,168][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-19 15:21:07,171][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-19 15:21:07,171][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}} 
+[2023-04-19 15:21:07,171][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-19 15:21:07,172][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [['Ture', 0, '成功']]} 
+[2023-04-19 15:22:13,747][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-19 15:22:13,749][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-19 15:22:13,749][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}} 
+[2023-04-19 15:22:13,750][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-19 15:22:13,750][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [['Ture', 0, '成功']]} 
+[2023-04-19 15:23:20,267][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-19 15:23:20,268][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-19 15:23:20,268][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}} 
+[2023-04-19 15:23:20,268][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-19 15:23:20,269][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [['Ture', 0, '成功']]} 
+[2023-04-19 15:23:42,695][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-19 15:23:42,696][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-19 15:23:42,697][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}} 
+[2023-04-19 15:23:42,697][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-19 15:23:42,698][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [['Ture', 0, '成功']]} 
+[2023-04-19 15:23:42,726][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-19 15:23:42,726][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-19 15:23:42,727][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-19 15:23:42,727][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 15:23:42,727][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 15:23:42,727][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-19 15:23:42,727][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 15:23:42,727][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 15:23:42,749][conftest.py 27][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-19 15:24:24,557][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-19 15:24:24,558][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-19 15:24:24,559][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}} 
+[2023-04-19 15:24:24,559][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-19 15:24:24,560][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [['Ture', 0, '成功']]} 
+[2023-04-19 15:24:24,586][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-19 15:24:24,586][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-19 15:24:24,586][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-19 15:24:24,586][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 15:24:24,586][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 15:24:24,586][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-19 15:24:24,586][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 15:24:24,586][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 15:24:24,607][conftest.py 27][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-19 15:24:24,608][test_02_logout_user.py 26][INFO]: *************** 开始执行用例 ***************
+[2023-04-19 15:26:19,050][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-19 15:26:19,051][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-19 15:26:19,052][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}} 
+[2023-04-19 15:26:19,052][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-19 15:26:19,052][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [['Ture', 0, '成功']]} 
+[2023-04-19 15:26:19,078][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-19 15:26:19,078][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-19 15:26:19,078][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-19 15:26:19,079][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 15:26:19,079][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 15:26:19,079][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-19 15:26:19,079][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 15:26:19,079][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 15:26:19,094][conftest.py 27][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-19 15:26:19,095][test_02_logout_user.py 26][INFO]: *************** 开始执行用例 ***************
+[2023-04-19 15:27:23,776][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-19 15:27:23,777][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-19 15:27:23,777][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}} 
+[2023-04-19 15:27:23,777][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-19 15:27:23,778][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [['Ture', 0, '成功']]} 
+[2023-04-19 15:27:23,808][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-19 15:27:23,808][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-19 15:27:23,808][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-19 15:27:23,808][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 15:27:23,808][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 15:27:23,808][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-19 15:27:23,808][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 15:27:23,808][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 15:27:23,829][conftest.py 27][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-19 15:27:23,830][test_02_logout_user.py 26][INFO]: *************** 开始执行用例 ***************
+[2023-04-19 15:28:17,090][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-19 15:28:17,092][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-19 15:28:17,092][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}} 
+[2023-04-19 15:28:17,092][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-19 15:28:17,092][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [['Ture', 0, '成功']]} 
+[2023-04-19 15:28:17,118][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-19 15:28:17,119][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-19 15:28:17,119][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-19 15:28:17,119][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 15:28:17,119][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 15:28:17,119][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-19 15:28:17,119][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 15:28:17,119][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 15:28:17,136][conftest.py 27][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-19 15:28:17,137][test_02_logout_user.py 26][INFO]: *************** 开始执行用例 ***************
+[2023-04-19 15:29:46,236][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-19 15:29:46,237][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-19 15:29:46,238][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}} 
+[2023-04-19 15:29:46,238][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-19 15:29:46,239][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [['Ture', 0, '成功']]} 
+[2023-04-19 15:29:46,264][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-19 15:29:46,265][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-19 15:29:46,265][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-19 15:29:46,265][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 15:29:46,265][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 15:29:46,265][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-19 15:29:46,265][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 15:29:46,265][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 15:29:46,284][conftest.py 27][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-19 15:29:46,285][test_02_logout_user.py 26][INFO]: *************** 开始执行用例 ***************
+[2023-04-19 15:29:46,285][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/logout
+[2023-04-19 15:29:46,286][rest_client.py 52][INFO]: 接口请求方式 ==>> PUT
+[2023-04-19 15:29:46,286][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "26fc4048-3fdd-45b2-8e86-b636d9266303"
+}
+[2023-04-19 15:29:46,286][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 15:29:46,286][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 15:29:46,286][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> null
+[2023-04-19 15:29:46,286][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 15:29:46,286][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 15:29:46,320][user.py 52][INFO]: 退出登录 == >> 返回结果 == >> {"success":true,"code":0,"message":"成功","data":null}
+[2023-04-19 15:29:46,320][test_02_logout_user.py 10][INFO]: 步骤1 ==>> 退出登录token：26fc4048-3fdd-45b2-8e86-b636d9266303
+[2023-04-19 15:32:42,475][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-19 15:32:42,476][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-19 15:32:42,476][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}} 
+[2023-04-19 15:32:42,476][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-19 15:32:42,477][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [['Ture', 0, '成功']]} 
+[2023-04-19 15:32:42,501][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-19 15:32:42,502][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-19 15:32:42,502][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-19 15:32:42,502][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 15:32:42,502][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 15:32:42,502][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-19 15:32:42,502][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 15:32:42,502][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 15:32:42,538][conftest.py 27][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-19 15:32:42,539][test_02_logout_user.py 26][INFO]: *************** 开始执行用例 ***************
+[2023-04-19 15:32:42,539][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/logout
+[2023-04-19 15:32:42,539][rest_client.py 52][INFO]: 接口请求方式 ==>> PUT
+[2023-04-19 15:32:42,539][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "4276f404-7711-47fd-8f85-cedf6d6e7b6f"
+}
+[2023-04-19 15:32:42,539][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 15:32:42,539][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 15:32:42,539][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> null
+[2023-04-19 15:32:42,540][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 15:32:42,540][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 15:32:42,551][user.py 52][INFO]: 退出登录 == >> 返回结果 == >> {"success":true,"code":0,"message":"成功","data":null}
+[2023-04-19 15:32:42,552][test_02_logout_user.py 10][INFO]: 步骤1 ==>> 退出登录token：4276f404-7711-47fd-8f85-cedf6d6e7b6f
+[2023-04-19 15:34:13,884][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-19 15:34:13,886][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-19 15:34:13,886][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}} 
+[2023-04-19 15:34:13,886][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-19 15:34:13,887][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [['Ture', 0, '成功']]} 
+[2023-04-19 15:34:13,912][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-19 15:34:13,912][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-19 15:34:13,912][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-19 15:34:13,912][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 15:34:13,912][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 15:34:13,912][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-19 15:34:13,912][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 15:34:13,912][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 15:34:13,934][conftest.py 27][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-19 15:34:13,935][test_02_logout_user.py 26][INFO]: *************** 开始执行用例 ***************
+[2023-04-19 15:34:13,936][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/logout
+[2023-04-19 15:34:13,936][rest_client.py 52][INFO]: 接口请求方式 ==>> PUT
+[2023-04-19 15:34:13,936][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "d84d93ef-941a-43da-a2c2-83cceb27f66d"
+}
+[2023-04-19 15:34:13,936][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 15:34:13,936][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 15:34:13,936][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> null
+[2023-04-19 15:34:13,936][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 15:34:13,936][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 15:34:13,947][user.py 52][INFO]: 退出登录 == >> 返回结果 == >> {"success":true,"code":0,"message":"成功","data":null}
+[2023-04-19 15:34:13,947][test_02_logout_user.py 10][INFO]: 步骤1 ==>> 退出登录token：d84d93ef-941a-43da-a2c2-83cceb27f66d
+[2023-04-19 15:35:17,430][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-19 15:35:17,431][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-19 15:35:17,432][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}} 
+[2023-04-19 15:35:17,432][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-19 15:35:17,433][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [['Ture', 0, '成功']]} 
+[2023-04-19 15:35:17,460][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-19 15:35:17,460][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-19 15:35:17,460][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-19 15:35:17,460][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 15:35:17,460][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 15:35:17,460][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-19 15:35:17,460][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 15:35:17,460][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 15:35:17,486][conftest.py 27][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-19 15:35:17,487][test_02_logout_user.py 26][INFO]: *************** 开始执行用例 ***************
+[2023-04-19 15:35:17,487][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/logout
+[2023-04-19 15:35:17,487][rest_client.py 52][INFO]: 接口请求方式 ==>> PUT
+[2023-04-19 15:35:17,488][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "58ea76f8-0180-4fa8-9a9f-3da53361701b"
+}
+[2023-04-19 15:35:17,488][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 15:35:17,488][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 15:35:17,488][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> null
+[2023-04-19 15:35:17,488][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 15:35:17,488][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 15:35:17,500][user.py 52][INFO]: 退出登录 == >> 返回结果 == >> {"success":true,"code":0,"message":"成功","data":null}
+[2023-04-19 15:35:17,500][test_02_logout_user.py 10][INFO]: 步骤1 ==>> 退出登录token：58ea76f8-0180-4fa8-9a9f-3da53361701b
+[2023-04-19 15:36:39,845][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-19 15:36:39,846][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-19 15:36:39,847][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}} 
+[2023-04-19 15:36:39,847][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-19 15:36:39,848][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [['Ture', 0, '成功']]} 
+[2023-04-19 15:36:39,875][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-19 15:36:39,875][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-19 15:36:39,875][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-19 15:36:39,875][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 15:36:39,875][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 15:36:39,875][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-19 15:36:39,875][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 15:36:39,875][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 15:36:39,896][conftest.py 27][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-19 15:36:39,897][test_02_logout_user.py 26][INFO]: *************** 开始执行用例 ***************
+[2023-04-19 15:36:39,898][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/logout
+[2023-04-19 15:36:39,898][rest_client.py 52][INFO]: 接口请求方式 ==>> PUT
+[2023-04-19 15:36:39,898][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "cf425934-827e-4512-bdfd-81ea383f683c"
+}
+[2023-04-19 15:36:39,898][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 15:36:39,898][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 15:36:39,898][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> null
+[2023-04-19 15:36:39,898][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 15:36:39,898][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 15:36:39,908][user.py 52][INFO]: 退出登录 == >> 返回结果 == >> {"success":true,"code":0,"message":"成功","data":null}
+[2023-04-19 15:36:39,908][test_02_logout_user.py 10][INFO]: 步骤1 ==>> 退出登录token：cf425934-827e-4512-bdfd-81ea383f683c
+[2023-04-19 15:41:53,114][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-19 15:41:53,115][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-19 15:41:53,116][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}} 
+[2023-04-19 15:41:53,116][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-19 15:41:53,120][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [['Ture', 0, '成功']]} 
+[2023-04-19 15:41:53,179][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-19 15:41:53,179][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-19 15:41:53,180][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-19 15:41:53,180][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 15:41:53,180][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 15:41:53,180][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-19 15:41:53,180][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 15:41:53,180][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 15:41:53,209][conftest.py 27][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-19 15:41:53,211][test_02_logout_user.py 26][INFO]: *************** 开始执行用例 ***************
+[2023-04-19 15:42:34,761][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/logout
+[2023-04-19 15:42:36,543][rest_client.py 52][INFO]: 接口请求方式 ==>> PUT
+[2023-04-19 15:42:37,330][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "a89242c3-8be2-4e8f-9404-6055fa81e9d3"
+}
+[2023-04-19 15:42:38,011][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 15:42:38,521][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 15:42:39,047][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> null
+[2023-04-19 15:42:39,602][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 15:42:40,143][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 15:43:11,792][user.py 52][INFO]: 退出登录 == >> 返回结果 == >> {"success":true,"code":0,"message":"成功","data":null}
+[2023-04-19 15:43:17,554][test_02_logout_user.py 10][INFO]: 步骤1 ==>> 退出登录token：a89242c3-8be2-4e8f-9404-6055fa81e9d3
+[2023-04-19 15:44:01,415][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-19 15:44:01,417][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-19 15:44:01,417][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}} 
+[2023-04-19 15:44:01,417][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-19 15:44:01,419][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [['Ture', 0, '成功']]} 
+[2023-04-19 15:44:01,442][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-19 15:44:01,442][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-19 15:44:01,442][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-19 15:44:01,442][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 15:44:01,442][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 15:44:01,442][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-19 15:44:01,442][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 15:44:01,442][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 15:44:01,462][conftest.py 27][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-19 15:44:01,464][test_02_logout_user.py 26][INFO]: *************** 开始执行用例 ***************
+[2023-04-19 15:44:01,464][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/logout
+[2023-04-19 15:44:01,464][rest_client.py 52][INFO]: 接口请求方式 ==>> PUT
+[2023-04-19 15:44:01,464][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "ab8b7920-23f8-4e09-ab29-6e8568c58e71"
+}
+[2023-04-19 15:44:01,464][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 15:44:01,464][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 15:44:01,464][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> null
+[2023-04-19 15:44:01,464][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 15:44:01,464][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 15:44:01,473][user.py 52][INFO]: 退出登录 == >> 返回结果 == >> {"success":true,"code":0,"message":"成功","data":null}
+[2023-04-19 15:44:01,473][test_02_logout_user.py 10][INFO]: 步骤1 ==>> 退出登录token：ab8b7920-23f8-4e09-ab29-6e8568c58e71
+[2023-04-19 15:47:11,232][read_data.py 36][INFO]: 加载 D:\PythonProject\pytestProject\config\setting.ini 文件......
+[2023-04-19 15:47:11,233][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\base_data.yml 文件......
+[2023-04-19 15:47:11,234][read_data.py 25][INFO]: 读到数据 ==>>  {'init_admin_user': {'username': 'dahua', 'password': '123456'}} 
+[2023-04-19 15:47:11,234][read_data.py 22][INFO]: 加载 D:\PythonProject\pytestProject\data\api_test_data.yml 文件......
+[2023-04-19 15:47:11,235][read_data.py 25][INFO]: 读到数据 ==>>  {'test_login_user': [['dahua', '123456', True, 0, '成功'], ['dahua1', '123456', False, 401, '密码或者用户名错误']], 'test_logout_user': [[True, 0, '成功']]} 
+[2023-04-19 15:47:11,258][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-04-19 15:47:11,258][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-04-19 15:47:11,258][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-04-19 15:47:11,258][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 15:47:11,258][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 15:47:11,259][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-04-19 15:47:11,259][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 15:47:11,259][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 15:47:11,280][conftest.py 27][INFO]: 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[2023-04-19 15:47:11,281][test_02_logout_user.py 26][INFO]: *************** 开始执行用例 ***************
+[2023-04-19 15:47:11,282][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/logout
+[2023-04-19 15:47:11,282][rest_client.py 52][INFO]: 接口请求方式 ==>> PUT
+[2023-04-19 15:47:11,282][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "2b804565-337f-4c26-b625-d1504341d8a8"
+}
+[2023-04-19 15:47:11,282][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-04-19 15:47:11,282][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-04-19 15:47:11,282][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> null
+[2023-04-19 15:47:11,282][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-04-19 15:47:11,282][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-04-19 15:47:11,294][user.py 52][INFO]: 退出登录 == >> 返回结果 == >> {"success":true,"code":0,"message":"成功","data":null}
+[2023-04-19 15:47:11,295][test_02_logout_user.py 10][INFO]: 步骤1 ==>> 退出登录token：2b804565-337f-4c26-b625-d1504341d8a8
+[2023-04-19 15:47:11,295][test_02_logout_user.py 32][INFO]: code ==>> 期望结果：0,实际结果：【0】
+[2023-04-19 15:47:11,295][test_02_logout_user.py 35][INFO]: *************** 结束执行用例 ***************

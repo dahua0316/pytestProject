@@ -1,0 +1,38 @@
+[32mINFO    [0m log:rest_client.py:51 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[32mINFO    [0m log:rest_client.py:52 接口请求方式 ==>> POST
+[32mINFO    [0m log:rest_client.py:54 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[32mINFO    [0m log:rest_client.py:55 接口请求 params 参数 ==>> null
+[32mINFO    [0m log:rest_client.py:56 接口请求体 data 参数 ==>> null
+[32mINFO    [0m log:rest_client.py:57 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[32mINFO    [0m log:rest_client.py:58 接口上传附件 files 参数 ==>> None
+[32mINFO    [0m log:rest_client.py:59 接口 cookies 参数 ==>> null
+[32mINFO    [0m log:conftest.py:39 前置步骤 ==>> 管理员 dahua 登录，返回信息 为：<Response [200]>
+[32mINFO    [0m log:test_04_ticket.py:38 *************** 开始执行用例 ***************
+[32mINFO    [0m log:rest_client.py:51 接口请求地址 ==>> http://192.168.50.30:8086/api/ticket/page
+[32mINFO    [0m log:rest_client.py:52 接口请求方式 ==>> GET
+[32mINFO    [0m log:rest_client.py:54 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "Authorization": "d55a4a57-321b-43c2-8a4c-949489cc741b"
+}
+[32mINFO    [0m log:rest_client.py:55 接口请求 params 参数 ==>> {
+    "roomId": 710,
+    "current": 1,
+    "size": 10
+}
+[32mINFO    [0m log:rest_client.py:56 接口请求体 data 参数 ==>> null
+[32mINFO    [0m log:rest_client.py:57 接口请求体 json 参数 ==>> null
+[32mINFO    [0m log:rest_client.py:58 接口上传附件 files 参数 ==>> {'roomId': 710, 'current': 1, 'size': 10}
+[32mINFO    [0m log:rest_client.py:59 接口 cookies 参数 ==>> {
+    "roomId": 710,
+    "current": 1,
+    "size": 10
+}
+[32mINFO    [0m log:ticket.py:33 获取门票列表 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":{"records":[{"id":12998,"ticketId":"uk3hw4yj7v7ecqrg","createTime":"2023-05-04 19:13:50","updateTime":"2023-05-04 19:13:50","roomId":710,"userId":5,"status":1,"isActive":0,"expiredTime":"2023-05-05 19:13:49"},{"id":12997,"ticketId":"07ppjvvulq5shzz0","createTime":"2023-05-04 18:11:32","updateTime":"2023-05-04 18:11:32","roomId":710,"userId":5,"status":1,"isActive":0,"expiredTime":"2023-05-05 18:11:32"},{"id":12996,"ticketId":"dhst67nak0mpdyop","createTime":"2023-05-04 17:59:26","updateTime":"2023-05-04 17:59:26","roomId":710,"userId":5,"status":1,"isActive":0,"expiredTime":"2023-05-05 17:59:25"},{"id":12995,"ticketId":"x2ynio31mxl2x6e5","createTime":"2023-05-04 17:59:01","updateTime":"2023-05-04 17:59:01","roomId":710,"userId":5,"status":1,"isActive":0,"expiredTime":"2023-05-05 17:59:00"},{"id":12994,"ticketId":"wcawxk6csiuhdpuo","createTime":"2023-05-04 17:58:13","updateTime":"2023-05-04 17:58:13","roomId":710,"userId":5,"status":1,"isActive":0,"expiredTime":"2023-05-05 17:58:12"},{"id":12992,"ticketId":"1y3e4yaxptgjtrvw","createTime":"2023-05-04 17:25:50","updateTime":"2023-05-04 17:25:50","roomId":710,"userId":5,"status":1,"isActive":0,"expiredTime":"2023-05-05 17:25:49"},{"id":12991,"ticketId":"3zc1av7iegpex0sq","createTime":"2023-05-04 17:20:42","updateTime":"2023-05-04 17:20:42","roomId":710,"userId":5,"status":-1,"isActive":0,"expiredTime":"2023-05-04 17:20:41"},{"id":12990,"ticketId":"7u2gh6x82wcyny63","createTime":"2023-05-04 17:11:41","updateTime":"2023-05-04 17:11:41","roomId":710,"userId":5,"status":1,"isActive":0,"expiredTime":"2023-05-26 15:14:11"},{"id":12989,"ticketId":"pfp2vtmvh91q53xm","createTime":"2023-05-04 17:09:55","updateTime":"2023-05-04 17:09:55","roomId":710,"userId":5,"status":1,"isActive":0,"expiredTime":"2023-05-26 15:14:11"},{"id":12988,"ticketId":"yzirmfwhfmrcl8bw","createTime":"2023-05-04 17:07:55","updateTime":"2023-05-04 17:07:55","roomId":710,"userId":5,"status":1,"isActive":0,"expiredTime":"2023-05-26 15:14:11"}],"total":115,"size":10,"current":1,"orders":[],"optimizeCountSql":true,"searchCount":true,"countId":null,"maxLimit":null,"roomId":710,"pages":12}}
+[32mINFO    [0m log:test_04_ticket.py:12 步骤1 ==>> 获取门票列表
+[32mINFO    [0m log:test_04_ticket.py:44 code ==>> 期望结果：0,实际结果：【0】
+[32mINFO    [0m log:test_04_ticket.py:47 *************** 结束执行用例 ***************

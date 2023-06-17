@@ -1,0 +1,18 @@
+[2023-05-04 19:00:52,497][test_01_login_user.py 26][INFO]: *************** 开始执行用例 ***************
+[2023-05-04 19:01:04,579][rest_client.py 51][INFO]: 接口请求地址 ==>> http://192.168.50.30:8086/api/user/login
+[2023-05-04 19:01:05,123][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2023-05-04 19:01:05,402][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json"
+}
+[2023-05-04 19:01:05,666][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2023-05-04 19:01:06,055][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2023-05-04 19:01:06,517][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "password": "123456",
+    "username": "dahua"
+}
+[2023-05-04 19:01:06,965][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2023-05-04 19:01:07,447][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2023-05-04 19:01:17,578][user.py 30][INFO]: 登录用户 ==>> 返回结果 ==>> {"success":true,"code":0,"message":"成功","data":"aa319fe7-fa82-4315-98cd-6a0addc278c8"}
+[2023-05-04 19:01:19,022][test_01_login_user.py 10][INFO]: 步骤1==>>登录用户：dahua
+[2023-05-04 19:01:21,766][test_01_login_user.py 31][INFO]: code ==>> 期望结果：0， 实际结果：【 0 】
+[2023-05-04 19:01:25,982][test_01_login_user.py 34][INFO]: **************** 结束执行用例 **************

@@ -1,0 +1,5 @@
+[32mINFO    [0m log:conftest.py:28 ******************************
+[32mINFO    [0m log:conftest.py:29 前置步骤开始 ==>> 清理数据
+[32mINFO    [0m log:conftest.py:80 更新门票操作：更新门票状态--准备作废门票
+[32mINFO    [0m log:conftest.py:81 执行前置SQL:UPDATE rays_cloud.t_ticket SET status= 1 where id = 12993;
+[32mINFO    [0m log:test_04_ticket.py:75 *************** 开始执行用例 ***************
